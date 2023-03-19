@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 import styles from './post.module.scss';
 import { getPrismicClient } from '../../services/prismic'
 import { RichText } from 'prismic-dom'
-import { Description } from '@material-ui/icons';
+
 import Head from 'next/head';
 import Image from 'next/image';
 
