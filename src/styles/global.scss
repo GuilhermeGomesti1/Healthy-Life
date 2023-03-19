@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap');
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-: #FFF;
+    --green1-:#6CAD97;
+    --green-:#66FF4A;
+    --gray-100: #AD7DA0;
+    --gray-200: #3f3636; //divisor
+    --lbege: #fbd7cee0; //backgroundcolor
+    --white-200: #EFEFEF; //background body;
+    --gray-: #545454;
+    --brown-: #7DAD92; //CTA - Buttons
+  --yellow-500: #FFBE16;
+
+}
+
+@media (max-width : 100px){
+    html{
+        font-size: 93.75%; //vai gerar 15px para ajustar o html quando aumentar e diminuir o tamanho da tela (padrão)
+    }
+}
+    @media (max-width : 720px){
+        html{
+            font-size: 87.5%; //vai gerar 14px para ajustar o html quando aumentar e diminuir o tamanho da tela (padrão)
+        }
+}
+
+
+ 
+
+
+body, input, textarea, select, button{
+    font: 400 1rem 'Poppins', sans-serif; 
+}
+
+h1 { font-family: 'Allura', cursive;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; }
+
+
+span { 
+    font-family: 'Allura', cursive;
+font-family: 'Catamaran', sans-serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+
