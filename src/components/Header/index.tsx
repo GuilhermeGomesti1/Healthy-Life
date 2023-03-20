@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import Image from 'next/image';
-import logo from '../../../public/images/logo.svg'
+import logo from '../../../public/images/logo.jpeg'
 import { ActiveLink } from '../ActiveLink';
 
 
@@ -35,5 +35,7 @@ export function Header(){
                     <a className={styles.readyButton} type="button" href="https://sujeitoprogramador.com">Começar</a>
                 </div>
         </header>
+        
     )
+    
 }

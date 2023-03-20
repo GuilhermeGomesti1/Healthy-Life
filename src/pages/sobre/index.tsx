@@ -25,7 +25,8 @@ interface ContentProps{
 export default function Sobre({content}  : ContentProps){
     return(
        <>
-       <Head>
+
+    <div className={styles.sobremim}><Head>
         <title>Sobre mim: Gislene OLiveira</title>
 
        </Head>
@@ -65,7 +66,8 @@ export default function Sobre({content}  : ContentProps){
         
         </div>
 
-       </main>
+       </main></div>
+       
        </>
     )
 }
