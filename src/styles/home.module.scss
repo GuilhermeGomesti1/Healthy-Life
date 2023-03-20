@@ -9,21 +9,25 @@
 
 .area2{
     background-color: var(--white-);
-    img{max-width:550px ;
-        padding-left: 4rem;
+    img{max-width:640px ;
+        padding-left: 6rem;
        border-radius:50%;
     }
     button{
-        background-color:var(--lbege);
-        margin-left: 12.5rem;
+        background-color: var(--gray-);
+        
         border: 0;
-        padding: 0.1rem 1.8rem;
+        padding: 1rem 1.8rem;
         margin-bottom: 2rem;
         margin-top: 2.5rem;
         border-radius: 7px;
-        color: var(--gray-);
+        color: var(--white-);
         font-weight: bold;
-        
+        transition: 1s;
+        }
+        button:hover{
+           background-color: var(--lbege);
+          
         }
 }
 
@@ -55,6 +59,7 @@ img {
     max-width: 640px;
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.212);
     //border-radius: 50%;
+    
     }
 
     
@@ -83,6 +88,8 @@ img {
      
      }
 
+
+     //primeiro botao
      button{
     background-color: var(--green-);
     
@@ -97,6 +104,7 @@ img {
     }
     button:hover{
        background-color: var(--gray-);
+       
     }
     
 }
@@ -180,6 +188,7 @@ img {
         text-align: justify;
     }
     
+    //ultimo botao
     button{
         background-color: var(--brown-);
         border: 0;
@@ -197,13 +206,16 @@ img {
         .containerHeader{
             padding: 0 2rem;
 
+            //primeiro botao
             button{
                 display: block;
+                
 
             }
         }
         img{
             max-width: 600px;
+            padding: 0;
         }
         div h1{
           font-size: 3rem;  
@@ -218,8 +230,24 @@ img {
         .sectionContent, .nextLevelContent{
             padding: 0 2rem;
             
+         
         }
 
+        .area2{
+            padding: 0 2 rem;
+          
+            button{
+            //botao2
+           display: block; 
+          }
+
+          img{
+            max-width: 600px;
+            padding: 0;
+        }
+        }
+       
+    
     }
 
 }
@@ -230,12 +258,13 @@ img {
         .containerHeader{
             flex-direction: column;
 
+            //primeiro botao
             button{
                 width: 100%;
                 display: flex ;
                 justify-content: center;
                 align-items: center;
-
+               
             }
         }
 
@@ -251,10 +280,24 @@ img {
          }
          .sectionContent{
             flex-direction: column;
-            img{
-                margin-top: 2rem;
-                max-width: 400px;
-            }
+            
+   
          }
+         
+         //botao 2 e img 2 tela pequena
+         .area2{
+                button{
+                    width: 100%;
+                    display: flex ;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                img{ 
+                    margin-top: 2rem;
+                    max-width: 400px;
+                   
+                }
+            }
     }
 }
