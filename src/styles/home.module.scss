@@ -244,6 +244,7 @@ img {
           img{
             max-width: 600px;
             padding: 0;
+            
         }
         }
        
@@ -268,8 +269,9 @@ img {
             }
         }
 
-        div img{
-            max-width: 500px;
+        //todas imagens
+        div img{ 
+            max-width: 400px;
         }
         div h1{
             font-size: 3rem ;
