@@ -89,6 +89,8 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                         {ebooks.map( ebook => (<Link key={ebook.slug} legacyBehavior href={`/ebooks/${ebook.slug}`}>
                             
                             <a key={ebook.slug}>
+                               
+                              <div className={styles.imgbook}>
                                 <Image src={ebook.coverbook} alt={ebook.titlebook}
                                 width={720}
                                 height={410}
@@ -96,11 +98,13 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                                 placeholder="blur"
                                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPceQ4AAkYBiUQ8i/IAAAAASUVORK5CYII="
                                 />
-
-                                <strong>{ebook.titlebook}</strong>
-                                <time>{ebook.updatedAt}</time>
+                                </div> 
+                               <div className={styles.textbook}> <strong>{ebook.titlebook}</strong>
+                                
                                 <p>{ebook.descriptionbook}
                                 </p>
+                                <time>{ebook.updatedAt}</time>
+                                </div>
                             </a>
 
                         </Link>))}

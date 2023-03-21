@@ -71,7 +71,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
     const ebook = {
         slug: slug,
         titlebook: RichText.asText(response.data.titlebook),
-        description: RichText.asHtml(response.data.descriptionbook),
+        descriptionbook: RichText.asHtml(response.data.descriptionbook),
         coverbook: response.data.coverbook.url,
         updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR', {
           day: '2-digit',

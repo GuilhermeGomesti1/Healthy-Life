@@ -36,15 +36,22 @@
             color: var(--gray-);
         }
 
-        img {
-            max-width: 100%;
-            max-height: 410px;
+        .imgbook{ 
+            img {
+                height: 600px;
+                width: 400px;
+                display: block;
+                margin: 0 auto;
             border: 2px solid var(--white-);
             border-radius: 6px;
             border-image: linear-gradiente(95deg, #FBD7CE, transparent) 1;
         }
 
-        strong {
+        }
+            .textbook{  
+               text-align: center;
+                strong {
+                    text-align: center;
             font-family: 'Allura', cursive;
             font-family: 'Catamaran', sans-serif;
             font-family: 'DM Serif Display', serif;
@@ -57,8 +64,15 @@
             color: var(--gray-);
             transition: color 0.3s;
         }
-
+      
+        time{display: block;
+            margin: auto;
+            font-size: 10px;
+            
+            text-align: center;
+        }
         p {
+            text-align: center;
             font-family: 'Allura', cursive;
             font-family: 'Catamaran', sans-serif;
             font-family: 'DM Serif Display', serif;
@@ -68,10 +82,14 @@
             margin-top: 0.5rem;
             line-height: 1.62;
         }
+        
+        
 
         &:hover strong {
             color: #7A6964,
         }
+            }
+        
 
     }
 }
