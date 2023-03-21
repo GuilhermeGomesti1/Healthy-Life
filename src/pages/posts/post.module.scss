@@ -6,7 +6,7 @@
 }
 .container{
     
-    background-color: #ffffff79;
+    
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -70,6 +70,17 @@ time{
         background-color: var(--green-);
         padding: 0.5rem;
         color: var(--gray-200);
+    }
+}
+
+
+@media (max-width: 1095px){
+    .post {
+            img{
+         margin: 0 auto;
+        max-width: 300px;
+
+    }
     }
 }
 
