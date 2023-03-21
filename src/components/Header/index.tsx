@@ -9,14 +9,21 @@ export function Header(){
     return(
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
-                
+
+
+           <div className={styles.logo}>    
             <ActiveLink legacyBehavior href="/" activeClassName={styles.active} >
-                
+              
+           
                 <a>
                     <Image src={logo} alt="Logo" />
-                </a>
+                </a> 
+                
+                
 
                 </ActiveLink>
+
+                </div> 
 
                 <nav>
                     <ActiveLink legacyBehavior href="/" activeClassName={styles.active} >
