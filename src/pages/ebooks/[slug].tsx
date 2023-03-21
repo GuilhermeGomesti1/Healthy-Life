@@ -6,39 +6,38 @@ import { RichText } from 'prismic-dom'
 import Head from 'next/head';
 import Image from 'next/image';
 
-interface PostProps{
-    post: {
+interface EbookProps{
+    ebook: {
         slug: string,
-        title:string,
-        description:string,
-        cover:string,
+        titlebook:string,
+        descriptionbook:string,
+        coverbook:string,
         updatedAt:string,
     }
 }
 
-export default function Post({post}: PostProps ){
+export default function Ebook({ebook}: EbookProps ){
 
       return(
         <>
-      
          <Head> 
-                <title>{post.title}</title>
+                <title>{ebook.titlebook}</title>
          </Head>
          <div className={styles.allpage}>
          <main className={styles.container}>
             <article className={styles.post}>
                 <Image
                 quality={100}
-                src={post.cover} 
+                src={ebook.coverbook} 
                 width={720}
                 height={410}
-                alt={post.title}
+                alt={ebook.titlebook}
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPceQ4AAkYBiUQ8i/IAAAAASUVORK5CYII="/>
 
-                <h1>{post.title}</h1>
-                <time>{post.updatedAt}</time>
-                <div className={styles.postContent} dangerouslySetInnerHTML={{ __html:post.description}}></div>
+                <h1>{ebook.titlebook}</h1>
+                <time>{ebook.updatedAt}</time>
+                <div className={styles.postContent} dangerouslySetInnerHTML={{ __html:ebook.descriptionbook}}></div>
 
             </article>
            
@@ -46,9 +45,7 @@ export default function Post({post}: PostProps ){
 
 
          </main>
-
          </div>
-
         </>
       
         
@@ -60,22 +57,22 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
     const { slug } = params;    
     const prismic = getPrismicClient(req);
 
-    const response = await prismic.getByUID('post', String(slug), {});
+    const response = await prismic.getByUID('ebook', String(slug), {});
 
     if(!response){
         return{
             redirect:{
-                destination:'/posts',
+                destination:'/ebooks',
                 permanent:false
             }
         } 
     }
 
-    const post = {
+    const ebook = {
         slug: slug,
-        title: RichText.asText(response.data.title),
-        description: RichText.asHtml(response.data.description),
-        cover: response.data.cover.url,
+        titlebook: RichText.asText(response.data.titlebook),
+        description: RichText.asHtml(response.data.descriptionbook),
+        coverbook: response.data.coverbook.url,
         updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR', {
           day: '2-digit',
           month: 'long',
@@ -87,7 +84,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
 
     return{
         props:{
-            post
+            ebook
         }
     }
 }

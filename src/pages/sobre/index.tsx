@@ -10,6 +10,8 @@ import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook} from 'react-icons/fa'
 type Content ={
     title: string;
     description: string;
+    title2:string;
+    text2about:string;
     banner: string;
     facebook: string;
     instagram: string;
@@ -35,6 +37,9 @@ export default function Sobre({content}  : ContentProps){
             <section className={styles.ctaText}>
                 <h1>{content.title}</h1>
                 <p>{content.description}</p>
+                
+                <h2>{content.title2}</h2>
+                <p>{content.text2about}</p>
 
                 <a href={content.youtube}>
                     <FaYoutube size={40}/>
@@ -82,6 +87,8 @@ export const getStaticProps: GetStaticProps = async () => {
     const {     
         title,
         description,
+        title2,
+        text2about,
         banner,
         facebook,
         instagram,
@@ -94,6 +101,8 @@ export const getStaticProps: GetStaticProps = async () => {
     const content = {
         title: RichText.asText(title),
         description: RichText.asText(description),
+        title2: RichText.asText(title2),
+        text2about: RichText.asText(text2about),
         banner: banner.url,
         facebook: facebook.url,
         instagram: instagram.url,
@@ -107,6 +116,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props:{
       content
     },
-    revalidate: 60 * 15 //a cada 15 minutos
+    revalidate: 60 * 1 //a cada 15 minutos
   }
 }

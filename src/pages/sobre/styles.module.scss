@@ -22,11 +22,16 @@
 .ctaText{
      max-width: 600px;
    
-h1{
+h1{padding-top: 3rem;
     font-size: 3rem;
     font-weight: 900;
     margin: 2.5rem;
     color: var(--gray-200);
+}
+
+h2{padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-indent: 2.5rem;
 }
 
 p{

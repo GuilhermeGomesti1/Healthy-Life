@@ -37,9 +37,7 @@ export default function Home({ content }: ContentProps) {
 
       <main className={styles.container}>
         
-        <div className={styles.apresentacao}>
-        <Image src={""} alt="fotologo" />
-        </div>
+      
 
         
         
@@ -53,8 +51,9 @@ export default function Home({ content }: ContentProps) {
              
               <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
                 <a href="/sobre">
+                  <br/>
                   <button>
-                    Sobre mim
+                    Saiba mais
                   </button>
                 </a>
               </ActiveLink>

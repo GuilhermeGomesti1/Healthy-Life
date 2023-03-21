@@ -24,12 +24,18 @@ export function Header(){
                     </ActiveLink>
 
                     <ActiveLink legacyBehavior href="/posts" activeClassName={styles.active}>
-                        <a>Conteúdos</a>
+                        <a>Dicas</a>
+                    </ActiveLink>
+
+                    <ActiveLink legacyBehavior href="/ebooks" activeClassName={styles.active}>
+                        <a>e-books</a>
                     </ActiveLink>
                    
                     <ActiveLink legacyBehavior href="/sobre" activeClassName={styles.active}>
                         <a>Sobre mim</a>
                     </ActiveLink>
+
+                   
 
                 </nav>
                     <a className={styles.readyButton} type="button" href="https://sujeitoprogramador.com">Começar</a>
