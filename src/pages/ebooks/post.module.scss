@@ -11,10 +11,10 @@
     padding: 0 2rem;
     padding-bottom: 5rem;
     border-radius: 5px;
-    box-shadow: 3px 3px  #54545417, -0.2em 0 0.4em rgba(49, 49, 48, 0.144);
+    
 }
 
-.post{padding-top: 3rem;
+.post{
     max-width: 720px;
     margin: 5rem auto 0;
 
@@ -23,7 +23,10 @@ img{
                 width: 350px;
                 display: block;
                 margin: 0 auto;
-    border-radius: 15px;
+    
+    border: 2px solid var(--white-);
+    border-radius: 5px;
+    border-image: linear-gradiente(95deg, #FBD7CE, transparent) 1;
     
     
 }
