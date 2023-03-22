@@ -31,7 +31,7 @@
             transition: color 0.2s;
 
         & + a { //aplicar em todos menos no primeiro
-            margin-left: 2rem;
+            margin-left: 1.5rem;
         }
         &:hover{
             color: var(--gray-);
