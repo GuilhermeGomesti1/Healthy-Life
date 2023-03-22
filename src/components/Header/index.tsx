@@ -35,7 +35,7 @@ export function Header(){
                     </ActiveLink>
 
                     <ActiveLink legacyBehavior href="/ebooks" activeClassName={styles.active}>
-                        <a>e-books</a>
+                        <a>E-books</a>
                     </ActiveLink>
                    
                     <ActiveLink legacyBehavior href="/sobre" activeClassName={styles.active}>
