@@ -9,10 +9,8 @@
 
 .area2{
     background-color: var(--white-);
-    img{max-width:640px ;
-        padding-left: 6rem;
-        border-radius: 50%;
-    }
+    img{border-radius: 50%;}
+   
     button{
         background-color: var(--gray-);
         
@@ -31,6 +29,8 @@
         }
 }
 
+
+
 .area3{
     background-color: var(--lbege);
     width: 100%;
@@ -39,9 +39,19 @@
         
         
     }
-   
+    
 }
+.ebooks{
+    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+    width: 100%;
+    img{
+        padding-right: 4rem;
+        
+        
+    }
 
+
+}
 .area4{
     background-color: var(--white-);
 }
@@ -76,6 +86,13 @@ img {
 
     h1{
         font-size: 3.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+        color: var(--gray-)
+    }
+    h2{
+        font-size: 2rem;
         line-height: 4.5rem;
         font-weight: 900;
         margin-top: 2.5rem;
@@ -129,6 +146,11 @@ img {
     align-items: center;
     justify-content: center;
 
+    img{max-width:640px ;
+        padding-left: 6rem;
+       
+    }
+
     section{
         max-width: 670px;
         
@@ -155,7 +177,51 @@ img {
     
 }
 
+.ebookscontent{
+    
+    text-align: justify;
+    margin: 5.5rem auto;
+    max-width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    img{max-width:640px ;
+       padding-top: 7rem;
+        border-radius: 10%;
+        padding-bottom: 7rem;
+       max-height: 800px;
+        
+    }
+
+    section{
+        max-width: 670px;
+        
+       
+
+    }
+    
+
+    h2{padding-left: 3rem;
+        font-size: 2.2rem;
+        line-height:4.5rem ;
+        font-weight:900 ;
+        margin-top: 2.2rem;
+        color: var(--gray-);
+
+    }
+    
+    span{
+        padding-left: 3rem;
+        font-size: 1rem;
+        line-height:2.25rem ;
+        color: var(--gray-);
+        text-align: justify;
+    }
+
+
+
+}
 
 .nextLevelContent{
     

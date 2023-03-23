@@ -14,12 +14,16 @@ type Content = {
   titleContent: string;
   linkAction: string;
   imagetop: string,
+  title2gi1: string,
   bloco2title: string;
   bloco2content: string;
   bloco2banner: string;
   bloco3banner: string;
   bloco3: string;
   bloco3content: string;
+  bloco4banner: string;
+  bloco4: string;
+  bloco4content: string;
   footer: string;
 
 }
@@ -36,24 +40,27 @@ export default function Home({ content }: ContentProps) {
       </Head>
 
       <main className={styles.container}>
-        
-      
 
-        
-        
+
+
+
+
         <div className={styles.area1}>
           <div className={styles.containerHeader}>
 
             <section className={styles.ctaText}>
               <h1>{content.title}</h1>
-              <span > {content.titleContent}  </span>
-             
-             
+              <span > {content.
+              titleContent}  </span>
+                
+            <h2>{content.title2gi1}</h2>
+
+
               <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
                 <a href="/sobre">
-                  <br/>
+                  <br />
                   <button>
-                    Saiba mais
+                    Sobre mim
                   </button>
                 </a>
               </ActiveLink>
@@ -61,8 +68,11 @@ export default function Home({ content }: ContentProps) {
 
             </section>
 
+            
             <img src={content.imagetop} alt='Conteúdos' />
+       
 
+           
           </div>
 
 
@@ -89,31 +99,24 @@ export default function Home({ content }: ContentProps) {
               </ActiveLink>
             </section>
 
-            
-            
+
+
             <ActiveLink legacyBehavior href="/posts" activeClassName='' >
-              
-            <a href="/posts">
-              <img src={content.bloco2banner} alt="Conteudo " />
-            </a>
-            
+
+              <a href="/posts">
+                <img src={content.bloco2banner} alt="Conteudo " />
+              </a>
+
             </ActiveLink>
-           
+
 
 
           </div>
-          
-        </div>
 
+          <div className={styles.ebooks}>
+            <div className={styles.ebookscontent}>
 
-        <div className={styles.area3}>
-
-
-          <div className={styles.sectionContent}>
-          
-          
             <img src={content.bloco3banner} alt="Conteudo " />
-
 
 
 
@@ -123,6 +126,31 @@ export default function Home({ content }: ContentProps) {
               </h2>
               <span>
                 {content.bloco3content}
+              </span>
+            </section>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div className={styles.area3}>
+
+
+          <div className={styles.sectionContent}>
+
+
+            <img src={content.bloco4banner} alt="Conteudo " />
+
+
+
+
+            <section>
+              <h2>
+                {content.bloco4}
+              </h2>
+              <span>
+                {content.bloco4content}
               </span>
             </section>
 
@@ -165,7 +193,7 @@ export const getStaticProps: GetStaticProps = async () => {
   //console.log(response.results[0].data);
 
   const {
-    title, sub_title, link_action, imagetop, bloco2, bloco2content, bloco_2_baner, bloco3banner, bloco_3, bloco3content, footer
+    title, sub_title, link_action, imagetop,title2gi1, bloco2, bloco2content, bloco_2_baner, bloco3banner, bloco_3, bloco3content, bloco4banner, titlebloco4,bloco4content, footer
   } = response.results[0].data;
 
   const content = {
@@ -173,6 +201,7 @@ export const getStaticProps: GetStaticProps = async () => {
     title: RichText.asText(title),
     titleContent: RichText.asText(sub_title),
     imagetop: imagetop.url,
+    title2gi1: RichText.asText(title2gi1),
     linkAction: link_action.url,
     bloco2title: RichText.asText(bloco2),
     bloco2content: RichText.asText(bloco2content),
@@ -180,6 +209,9 @@ export const getStaticProps: GetStaticProps = async () => {
     bloco3banner: bloco3banner.url,
     bloco3: RichText.asText(bloco_3),
     bloco3content: RichText.asText(bloco3content),
+    bloco4banner: bloco4banner.url,
+    bloco4: RichText.asText(titlebloco4),
+    bloco4content: RichText.asText(bloco4content),
 
     footer: footer.url
 
