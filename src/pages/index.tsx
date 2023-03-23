@@ -50,6 +50,7 @@ export default function Home({ content }: ContentProps) {
 
             <section className={styles.ctaText}>
               <h1>{content.title}</h1>
+              <br/>
               <span > {content.
               titleContent}  </span>
                 
