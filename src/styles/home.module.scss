@@ -2,10 +2,13 @@
     display: block;
 }
 
-.area1{padding-top: 3rem;
+.area1{padding-top: 2rem;
+    padding-bottom: 2rem;
     background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
     width: 100%;
-
+    img{border-radius: 3%;
+        box-shadow: 60px -16px rgb(0, 0, 0);
+  }
 }
 
 .area2{
@@ -68,7 +71,7 @@
 
 img {
     max-width: 640px;
-    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.212);
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.212);
     //border-radius: 50%;
     
     }

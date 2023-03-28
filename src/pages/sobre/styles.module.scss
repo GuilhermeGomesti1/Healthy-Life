@@ -15,7 +15,12 @@
     align-items: center;
 
     img{
-        max-width: 490px
+        max-width: 490px;
+        border-radius: 3%;
+        box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.123);
+       
+        
+        
     };
 }
 
