@@ -49,11 +49,7 @@
     background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
     width: 100%;
 
-
-    
-
-
-   
+ 
 }
 
 
@@ -187,7 +183,7 @@ img {
     
 }
 
-.ebookscontent{
+.ebookscontent{max-width: 600px;
     
     text-align: justify;
     margin: 5.5rem auto;
@@ -231,13 +227,11 @@ img {
     }
     
     span{
-        padding-left: 3rem;
         font-size: 1rem;
         line-height:2.25rem ;
         color: var(--gray-);
         text-align: justify;
     }
-
   button{
     margin-left: 2rem;
     padding-left: 3.5rem;
@@ -363,6 +357,11 @@ img {
                 
             }
 
+            span{
+                justify-content: center;
+                display: inline-block;
+                margin: 0 20px;
+            }
 
 
 
@@ -434,6 +433,7 @@ img {
                 align-items: center;
                 margin-right: 2.5rem;
                
+               
             }
           
           
@@ -447,16 +447,23 @@ img {
             }
 
             span{ 
-                margin: 0 auto;
-                  text-align: center;
-               
+                
+                  
+              justify-content: center;
+              display: inline-block;
+              margin: 0 20px;
+             
             }
 
             button{
-              max-width: 90%;
-              display: flex ;
+              max-width: 100%;
+            
               justify-content: center;
               align-items: center;
+              
+              display: inline-block;
+              margin:  20px;
+
              
             }
         }
