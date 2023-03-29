@@ -119,6 +119,8 @@ export default function Home({ content }: ContentProps) {
 
             <img src={content.bloco3banner} alt="Conteudo " />
 
+           
+
 
 
             <section>
@@ -128,6 +130,14 @@ export default function Home({ content }: ContentProps) {
               <span>
                 {content.bloco3content}
               </span>
+
+              <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
+                <a href="/ebooks">
+                  <button>
+                    ver tudo
+                  </button>
+                </a>
+              </ActiveLink>
             </section>
             </div>
           </div>

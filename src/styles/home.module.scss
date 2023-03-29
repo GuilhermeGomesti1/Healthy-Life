@@ -36,7 +36,7 @@
 
 
 .area3{
-    background-color: var(--lbege);
+   
     width: 100%;
     img{
         padding-right: 4rem;
@@ -48,14 +48,23 @@
 .ebooks{
     background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
     width: 100%;
+
+    
+   
     img{
         padding-right: 4rem;
         
         
     }
 
+    
 
+
+   
 }
+
+
+
 .area4{
     background-color: var(--white-);
 }
@@ -230,12 +239,21 @@ img {
         text-align: justify;
     }
 
+  button{
+    margin-left: 2rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 
+  button:hover{
+    background-color: var(--green-);
+    
+ }
 
 }
 
 .nextLevelContent{
-    
+   
     max-width: 1120px;
     margin: 6rem auto;
     display: flex;
@@ -327,32 +345,27 @@ img {
        
     
     }
-    .ebooks{
-        .ebookscontent{  padding: 0 2rem;
-            
-            display: block;
-            img{
-                max-width: 600px;
-                max-height: 500px;
-                padding: 2rem;
-                display: block;
-                margin: 0 auto;
-                border-radius: 35px; 
-              
-            }
-
-            h2{ margin-top: -0.5rem;
-                font-size: 2.3rem;
-             
+    .ebooks{    padding: 0 2 rem;
+          
+        .ebookscontent{    padding: 0 2 rem;
+          
+            button{
+                //botao2
+               display: block; 
+               margin-left: 2rem;
+              }
+    
+              img{ margin-top: 2rem;
+                margin-bottom: 2rem;
+                max-width: 500px;
+              margin-left: 3rem;
+              margin-right: 1rem;
+                padding: 0;
                 
-
             }
 
-            span{ 
-                padding-bottom: 2rem;
-                margin-bottom: 50rem;
-               
-            }
+
+
 
 
         }
@@ -361,7 +374,7 @@ img {
 
 }
 
-
+//janela muito pequena
 @media (max-width: 950px){
     .container{
         .containerHeader{
@@ -409,6 +422,43 @@ img {
                    
                 }
             }
+    }
+
+    .ebooks{ 
+        .ebookscontent{  
+            flex-direction: column;
+            
+          
+            img{ 
+                margin-top: 2rem;
+                max-width: 400px;
+               
+            }
+          
+          
+
+            h2{ margin-top: -0.5rem;
+                font-size: 2,5rem ;
+                margin: 0 auto;
+                text-align: center;
+                
+
+            }
+
+            span{ 
+                margin: 0 auto;
+                  text-align: center;
+               
+            }
+
+            button{
+              max-width: 90%;
+              display: flex ;
+              justify-content: center;
+              align-items: center;
+            }
+        }
+
     }
 }
 
