@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 import { getPrismicClient } from "../../services/prismic";
 import Prismic from '@prismicio/client';
 import { RichText } from "prismic-dom";
-import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook} from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook,FaTwitter } from 'react-icons/fa'
 
 type Content ={
     title: string;
@@ -16,7 +16,8 @@ type Content ={
     facebook: string;
     instagram: string;
     youtube: string;
-    whatsapp: string
+    whatsapp: string;
+    twitter:string;
     
 }
 interface ContentProps{
@@ -41,24 +42,28 @@ export default function Sobre({content}  : ContentProps){
                 <h2>{content.title2}</h2>
                 <p>{content.text2about}</p>
 
-                <a href={content.youtube}>
+                <a href={content.youtube} target="_blank">
                     <FaYoutube size={40}/>
 
                 </a>
 
-                <a href={content.instagram}>
+                <a href={content.instagram} target="_blank">
                     <FaInstagram size={40}/>
 
                 </a>
 
-                <a href={content.facebook}>
+                <a href={content.facebook} target="_blank">
                     <FaFacebook size={40}/>
 
                 </a>
 
-                <a href={content.whatsapp}>
+                <a href={content.whatsapp} target="_blank">
                     <FaWhatsapp size={40}/>
 
+                </a>
+
+                <a href={content.twitter} target="_blank">
+                    <FaTwitter size={40}/>
                 </a>
 
             </section>
@@ -93,7 +98,8 @@ export const getStaticProps: GetStaticProps = async () => {
         facebook,
         instagram,
         youtube,
-        whatsapp
+        whatsapp,
+        twitter
       
 
     } = response.results[0].data;
@@ -107,7 +113,8 @@ export const getStaticProps: GetStaticProps = async () => {
         facebook: facebook.url,
         instagram: instagram.url,
         youtube: youtube.url,
-        whatsapp: whatsapp.url
+        whatsapp: whatsapp.url,
+        twitter: twitter.url,
       
     };
 

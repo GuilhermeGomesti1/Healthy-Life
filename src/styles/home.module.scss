@@ -244,7 +244,12 @@ img {
  }
 
 }
-
+.gioliveira img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 .nextLevelContent{
    
     max-width: 1120px;
@@ -253,12 +258,18 @@ img {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
+    
 
-    h2{
+    h2{  
         font-size: 2.8rem;
         line-height: 4.5rem;
         font-weight: 900;
         color: var(--gray-);
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+     
 
         span{
             font-size: 2.8rem;
@@ -266,18 +277,19 @@ img {
             font-weight: 900;
             color: var(--gray-100);
             text-align: justify;
+            
 
         }
     }
-    span{
-        font-size: 1rem;
-        line-height: 2.25rem;
-        color: var(--brown-);
-        text-align: justify;
-    }
+   
     
     //ultimo botao
     button{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+     
         background-color: var(--brown-);
         border: 0;
         padding: 1rem 1.8rem;
@@ -287,9 +299,40 @@ img {
         font-weight: bold;
 
     }
+    .imagelinks {
+
+
+
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+     
+        
+        a svg {
+          display: inline;
+          margin-top: 15px;
+        }
+        
+        svg {
+          color: var(--gray-);
+          cursor: pointer;
+          margin-left: 15px;
+          transition: 0.3s;
+        }
+svg:hover{
+    color: blue;
+}
+
+}
+
 }
 
 @media (max-width: 1095px){
+
+
+
+    
     .container{
         .containerHeader{
             padding: 0 2rem;
@@ -370,6 +413,8 @@ img {
 
     }
 
+    
+
 }
 
 //janela muito pequena
@@ -441,6 +486,7 @@ img {
             h2{ margin-top: -0.5rem;
                 font-size: 2,5rem ;
                 margin: 0 auto;
+                
                
                 
 
@@ -468,6 +514,19 @@ img {
             }
         }
 
+    }
+
+    .area4 {
+        h2 {   font-size: 2rem;
+            text-align: center;
+            margin: 0 auto;
+          
+        }
+       
+
+        button{
+            display: none;
+        }
     }
 }
 

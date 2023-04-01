@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-
+import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter } from 'react-icons/fa'
 import styles from '../styles/home.module.scss';
 import { ActiveLink } from '../components/ActiveLink';
 import { getPrismicClient } from '../services/prismic';
@@ -50,11 +50,11 @@ export default function Home({ content }: ContentProps) {
 
             <section className={styles.ctaText}>
               <h1>{content.title}</h1>
-              <br/>
+              <br />
               <span > {content.
-              titleContent}  </span>
-                
-            <h2>{content.title2gi1}</h2>
+                titleContent}  </span>
+
+              <h2>{content.title2gi1}</h2>
 
 
               <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
@@ -69,11 +69,11 @@ export default function Home({ content }: ContentProps) {
 
             </section>
 
-            
-            <img src={content.imagetop} alt='Conteúdos' />
-       
 
-           
+            <img src={content.imagetop} alt='Conteúdos' />
+
+
+
           </div>
 
 
@@ -117,71 +117,93 @@ export default function Home({ content }: ContentProps) {
           <div className={styles.ebooks}>
             <div className={styles.ebookscontent}>
 
-            <img src={content.bloco3banner} alt="Conteudo " />
-
-           
+              <img src={content.bloco3banner} alt="Conteudo " />
 
 
 
-            <section>
-              <h2>
-                {content.bloco3}
-              </h2>
-              <span>
-                {content.bloco3content}
-              </span>
 
-              <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
-                <a href="/ebooks">
-                  <button>
-                    ver tudo
-                  </button>
-                </a>
-              </ActiveLink>
-            </section>
+
+              <section>
+                <h2>
+                  {content.bloco3}
+                </h2>
+                <span>
+                  {content.bloco3content}
+                </span>
+
+                <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
+                  <a href="/ebooks">
+                    <button>
+                      ver tudo
+                    </button>
+                  </a>
+                </ActiveLink>
+              </section>
             </div>
           </div>
 
         </div>
 
 
-        <div className={styles.area3}>
-
-
-          <div className={styles.sectionContent}>
-
-
-            <img src={content.bloco4banner} alt="Conteudo " />
-
-
-
-
-            <section>
-              <h2>
-                {content.bloco4}
-              </h2>
-              <span>
-                {content.bloco4content}
-              </span>
-            </section>
-
-
-          </div>
+        <div className={styles.gioliveira}>
+          <img src={content.footer} alt="Gislene Oliveira" />
         </div>
-
 
         <div className={styles.area4}>
           <div className={styles.nextLevelContent}>
-            <img src={content.footer} alt="tecnologias" />
             <h2>
-              Mais de <span className='styles.alunos'>15 mil</span> ja levaram sua carreira ao proxímo nivel</h2>
-            <span>
-              E você vai perder a chande de ser saudavel de uma vez por todas?
-            </span>
-            <a href={content.linkAction}>
-              <button>Conhecer agora!</button>
-            </a>
 
+              "A sua    <span className='styles.alunos'> saúde </span> começa aqui! " </h2>
+
+            <div className={styles.imagelinks}>
+
+
+
+
+
+
+
+
+
+              <a href="https://www.youtube.com/@nutravia_terra8284" target="_blank">
+                <FaYoutube size={40} />
+
+              </a>
+
+              <a href="https://www.instagram.com/gislenejm/?igshid=YmMyMTA2M2Y=" target="_blank">
+                <FaInstagram size={40} />
+
+              </a>
+
+              <a href="" target="_blank">
+                <FaFacebook size={40} />
+
+              </a>
+
+              <a href="https://api.whatsapp.com/send/?phone=5531984091588&text=Contato&type=phone_number&app_absent=0" target="_blank">
+                <FaWhatsapp size={40} />
+
+              </a>
+
+              <a href="https://twitter.com/gislenejm?s=11" target="_blank">
+                <FaTwitter size={40} />
+              </a>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            
+            <a href={content.linkAction}>
+              <button>Home</button>
+            </a>
 
 
 
@@ -204,7 +226,7 @@ export const getStaticProps: GetStaticProps = async () => {
   //console.log(response.results[0].data);
 
   const {
-    title, sub_title, link_action, imagetop,title2gi1, bloco2, bloco2content, bloco_2_baner, bloco3banner, bloco_3, bloco3content, bloco4banner, titlebloco4,bloco4content, footer
+    title, sub_title, link_action, imagetop, title2gi1, bloco2, bloco2content, bloco_2_baner, bloco3banner, bloco_3, bloco3content, footer
   } = response.results[0].data;
 
   const content = {
@@ -220,9 +242,7 @@ export const getStaticProps: GetStaticProps = async () => {
     bloco3banner: bloco3banner.url,
     bloco3: RichText.asText(bloco_3),
     bloco3content: RichText.asText(bloco3content),
-    bloco4banner: bloco4banner.url,
-    bloco4: RichText.asText(titlebloco4),
-    bloco4content: RichText.asText(bloco4content),
+
 
     footer: footer.url
 
