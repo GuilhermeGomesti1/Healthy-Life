@@ -145,9 +145,7 @@ export default function Home({ content }: ContentProps) {
         </div>
 
 
-        <div className={styles.gioliveira}>
-          <img src={content.footer} alt="Gislene Oliveira" />
-        </div>
+     
 
         <div className={styles.area4}>
           <div className={styles.nextLevelContent}>
