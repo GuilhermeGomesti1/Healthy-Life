@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter, FaShoppingCart } from 'react-icons/fa'
 import styles from '../styles/home.module.scss';
 import { ActiveLink } from '../components/ActiveLink';
 import { getPrismicClient } from '../services/prismic';
@@ -187,9 +187,11 @@ export default function Home({ content }: ContentProps) {
                 <FaTwitter size={40} />
               </a>
 
-
-
-
+              <a href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">
+                <FaShoppingCart size={40} />
+              </a>
+               
+              
 
             </div>
 
@@ -198,10 +200,7 @@ export default function Home({ content }: ContentProps) {
 
 
 
-            
-            <a href={content.linkAction}>
-              <button>Home</button>
-            </a>
+        
 
 
 

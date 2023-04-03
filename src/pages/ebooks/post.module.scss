@@ -11,6 +11,9 @@
     padding: 0 2rem;
     padding-bottom: 5rem;
     border-radius: 5px;
+   
+
+   
     
 }
 
@@ -77,5 +80,22 @@ time{
         padding: 0.5rem;
         color: var(--gray-200);
     }
+
 }
+.voltar{  background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff,); text-align: center; 
+    a{  padding-bottom: 5rem;
+        color: var(--gray-100);
+        display: inline-block;
+        margin: 0 auto;
+        transition: 1s;
+        
+        text-align: center;
+    }
+
+    a:hover{
+        color: var(--white-)
+    }
+
+}
+   
 

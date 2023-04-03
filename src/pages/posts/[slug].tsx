@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 import styles from './post.module.scss';
 import { getPrismicClient } from '../../services/prismic'
 import { RichText } from 'prismic-dom'
-
+import { FaArrowLeft} from 'react-icons/fa'
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -48,6 +48,15 @@ export default function Post({post}: PostProps ){
          </main>
 
          </div>
+
+<div className={styles.voltar}>
+
+<a href="/posts">
+                <FaArrowLeft size={40} />
+
+              </a>
+
+</div>
 
         </>
       

@@ -74,6 +74,22 @@ time{
 }
 
 
+.voltar{  background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff,); text-align: center; 
+    a{  padding-bottom: 5rem;
+        color: var(--gray-100);
+        display: inline-block;
+        margin: 0 auto;
+        transition: 1s;
+        
+        text-align: center;
+    }
+
+    a:hover{
+        color: var(--white-)
+    }
+
+}
+
 //@media (max-width: 1095px){
     //.post {
         //    img{
