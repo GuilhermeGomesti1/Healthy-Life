@@ -12,7 +12,7 @@ import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
 
 // https://png-pixel.com
-import { FiChevronLeft, FiChevronsLeft, FiChevronRight, FiChevronsRight, FaCartArrowDown } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronsLeft, FiChevronRight, FiChevronsRight, } from 'react-icons/fi';
 
 type Ebook = {
     slug: string,
