@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image';
 import logo from '../../../public/images/logo.jpeg'
 import { ActiveLink } from '../ActiveLink';
-
+import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter, FaShoppingCart } from 'react-icons/fa'
 
 
 export function Header(){
@@ -45,7 +45,8 @@ export function Header(){
                    
 
                 </nav>
-                    <a className={styles.readyButton} type="button" href="https://sujeitoprogramador.com">Começar</a>
+                    <a className={styles.readyButton} type="button" href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">  Produtos
+                    <FaShoppingCart size={25} /></a>
                 </div>
         </header>
         

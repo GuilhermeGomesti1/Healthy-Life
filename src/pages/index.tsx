@@ -151,7 +151,7 @@ export default function Home({ content }: ContentProps) {
           <div className={styles.nextLevelContent}>
             <h2>
 
-              "A sua    <span className='styles.alunos'> saúde </span> começa aqui! " </h2>
+              "Honre sua <span className='styles.alunos'> saúde </span> com uma nutrição gentil." </h2>
 
             <div className={styles.imagelinks}>
 
