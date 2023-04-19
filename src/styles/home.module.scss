@@ -86,7 +86,10 @@ img {
 
 }
 .ctaText{
+    text-align: justify;
     max-width: 600px;
+    
+    margin-right: 5rem;
 
     h1{
         font-size: 3.5rem;
@@ -106,6 +109,9 @@ img {
     line-height:2.25rem ;
     color: var(--gray-); 
     text-align: justify;
+    margin-left: 3rem;
+    margin-right: 3rem;
+   
     
      
      }
@@ -179,6 +185,7 @@ img {
         line-height:2.25rem ;
         color: var(--gray-);
         text-align: justify;
+       
     }
     
 }
@@ -420,7 +427,7 @@ svg:hover{
         .containerHeader{
             flex-direction: column;
 
-            //primeiro botao
+            
             button{
                 width: 100%;
                 display: flex ;
@@ -430,7 +437,7 @@ svg:hover{
             }
         }
 
-        //todas imagens
+       
         div img{ 
             max-width: 400px;
         }
