@@ -134,7 +134,7 @@ export default function Home({ content }: ContentProps) {
                 <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
                   <a href="/ebooks">
                     <button>
-                      ver tudo
+                      Ver tudo
                     </button>
                   </a>
                 </ActiveLink>
