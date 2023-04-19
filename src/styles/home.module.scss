@@ -28,7 +28,7 @@
         transition: 1s;
         }
         button:hover{
-           background-color: var(--lbege);
+           background-color: var(--green-);
           
         }
 }
@@ -119,7 +119,7 @@ img {
 
      //primeiro botao
      button{
-    background-color: var(--green-);
+    background-color: var(--gray-);
     
     border: 0;
     padding: 1rem 1.8rem;
@@ -132,7 +132,7 @@ img {
     transition: 1s;
     }
     button:hover{
-       background-color: var(--gray-);
+       background-color: var(--green-);
        
     }
     
