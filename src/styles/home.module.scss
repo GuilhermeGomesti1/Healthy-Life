@@ -88,8 +88,8 @@ img {
 .ctaText{
     text-align: justify;
     max-width: 600px;
-    
-    margin-right: 5rem;
+
+       
 
     h1{
         font-size: 3.5rem;
@@ -137,6 +137,14 @@ img {
     }
     
 }
+
+@media screen and (min-width: 1000px) {
+    .ctaText {
+        text-align: justify;
+        
+      margin-right: 4.5rem; /* altere o valor conforme necessário */
+    }
+  }
 
 
 .divisor{
@@ -340,7 +348,7 @@ svg:hover{
     .container{
         .containerHeader{
             padding: 0 2rem;
-
+         
             //primeiro botao
             button{
                 display: block;
@@ -359,6 +367,7 @@ svg:hover{
          font-size: 2.3rem;
          span{
             font-size: 2.3rem;
+            margin: 0;
          }   
         }
 
@@ -426,6 +435,7 @@ svg:hover{
     .container{
         .containerHeader{
             flex-direction: column;
+           
 
             
             button{
