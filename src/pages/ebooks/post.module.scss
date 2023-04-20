@@ -5,17 +5,22 @@
 }
 
 .container{
-   
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 2rem;
     padding-bottom: 5rem;
     border-radius: 5px;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-   
+
     
 }
+   
+    
+
 
 .post{
     max-width: 720px;
@@ -48,10 +53,33 @@ time{
     font-size: 1rem;
     display: block;
 }
+.readyButton{
+    margin-left: auto;
+    height: 3rem;
+    border-radius: 3rem;
+    background: var(--gray-);
+    border: 0;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-);
+    font-weight: bold;
+    transition:filter 0.2s;
+    max-width: 250px; /* Defina uma largura máxima para o botão */
+    margin-left: auto;
+    margin-right: auto; /* Centralize o botão horizontalmente */
+margin-bottom: -4rem;
+    &:hover{
+        filter: brightness(1.1);
+        
+    }
+}
 
 }
 .postContent{text-align: justify;
-    margin-top: 2rem;
+    margin-top: 5rem;
     line-height: 2rem;
     font-size: 1.125rem;
     color: var(--gray-200);
@@ -97,5 +125,9 @@ time{
     }
 
 }
+
+
+
+
    
 

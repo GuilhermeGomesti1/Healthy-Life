@@ -45,7 +45,7 @@ export function Header(){
                    
 
                 </nav>
-                    <a className={styles.readyButton} type="button" href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">  Produtos
+                    <a className={styles.readyButton} type="button" href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">  Produtos &nbsp;
                     <FaShoppingCart size={25} /></a>
                 </div>
         </header>

@@ -31,8 +31,10 @@
     };
 }
 
-.ctaText{
+.ctaText{ text-align: justify;
      max-width: 600px;
+
+     
    
 h1{font-family: 'Allura', cursive;
   font-family: 'Catamaran', sans-serif;
@@ -92,6 +94,15 @@ svg:hover{
 }
 
 }
+
+@media screen and (min-width: 1000px) {
+  .ctaText {
+      text-align: justify;
+      
+    margin-right: 6rem; /* altere o valor conforme necessário */
+  }
+}
+
 
 @media (max-width: 1110px){
     .containerHeader{

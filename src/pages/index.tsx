@@ -173,7 +173,7 @@ export default function Home({ content }: ContentProps) {
 
               </a>
 
-              <a href="" target="_blank">
+              <a href="https://www.facebook.com/gislene.oliveira.7712" target="_blank">
                 <FaFacebook size={40} />
 
               </a>
