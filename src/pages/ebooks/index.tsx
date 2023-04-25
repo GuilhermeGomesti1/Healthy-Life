@@ -86,7 +86,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
     return (
         <>
             <Head>
-                <title> Blog Vida saudável</title>
+                <title> Gislene Oliveira | E-books</title>
             </Head>
             <div className={styles.containerPost}>   <main className={styles.container}>
                 <div className={styles.posts}>

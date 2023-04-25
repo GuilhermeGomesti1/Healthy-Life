@@ -30,22 +30,31 @@
             color:  #7A6964;
             transition: color 0.2s;
 
+          
         & + a { //aplicar em todos menos no primeiro
             margin-left: 1.5rem;
         }
+        
         &:hover{
             color: var(--gray-);
+            
             
         }
 
         &.active{
             color: #7A6964;
             font-weight: bold;
+         
+           
+              
         }
 
      }
     }
 }
+.headerContent nav a:active {
+    cursor: progress;
+  }
 
 .readyButton{
     margin-left: auto;
@@ -65,7 +74,10 @@
         filter: brightness(1.1);
         
     }
+   
 }
+
+
 
 @media (max-width: 870px){
 

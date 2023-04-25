@@ -82,7 +82,7 @@ export default function Posts({ posts: postsBlog, page, totalPage }: PostsProps)
     return(
         <>  
             <Head>  
-                <title> Blog Vida saudável</title>
+                <title> Gislene Oliveira | Dicas e receitas</title>
             </Head>     
              <div className={styles.containerPost}>   <main className={styles.container}>
                     <div className={styles.posts}>

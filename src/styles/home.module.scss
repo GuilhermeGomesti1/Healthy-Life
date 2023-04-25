@@ -332,6 +332,9 @@ img {
           margin-left: 15px;
           transition: 0.3s;
         }
+        svg:active {
+            cursor: progress;
+          }
 svg:hover{
     color: blue;
 }

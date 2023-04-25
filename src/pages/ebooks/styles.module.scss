@@ -46,8 +46,12 @@
             border-radius: 5px;
             border-image: linear-gradiente(95deg, #FBD7CE, transparent) 1;
         }
-
+       
+        
         }
+        .imgbook img:active {
+            cursor: progress;}
+
             .textbook{  
                text-align: center;
                 strong {
@@ -115,6 +119,10 @@
             color: #7A6964,
         }
             }
+
+            .textbook:active {
+                cursor: progress;}
+    
         
 
     }

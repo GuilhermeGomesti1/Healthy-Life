@@ -36,7 +36,7 @@ export default function Home({ content }: ContentProps) {
   ; return (
     <>
       <Head>
-        <title>Vida saudável</title>
+        <title>Gislene Oliveira | Home </title>
       </Head>
 
       <main className={styles.container}>

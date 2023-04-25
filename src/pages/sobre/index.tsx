@@ -30,7 +30,7 @@ export default function Sobre({content}  : ContentProps){
        <>
 
     <div className={styles.sobremim}><Head>
-        <title>Sobre mim: Gislene OLiveira</title>
+        <title>Gislene OLiveira | Sobre mim</title>
 
        </Head>
        <main className={styles.container}>

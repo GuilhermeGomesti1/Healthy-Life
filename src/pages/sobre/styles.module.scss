@@ -88,7 +88,9 @@ svg{
     transition: 0.3s;
     
 }
-
+svg:active {
+  cursor: progress;
+}
 svg:hover{
     color: blue;
 }

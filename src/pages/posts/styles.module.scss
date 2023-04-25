@@ -72,10 +72,14 @@
         &:hover strong {
             color: #7A6964,
         }
+       
 
     }
+   
 }
-
+.posts a:active {
+    cursor: progress;
+}
 
 .buttonNavigate {
     margin-top: 2rem;
