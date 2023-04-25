@@ -34,6 +34,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
     const [currentPage, setCurrentPage] = useState(Number(page));
 
     const [ebooks, setEbooks] = useState(ebooksBlog || []);
+    
 
 
     //Buscar novos posts
@@ -66,6 +67,8 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                 descriptionbook: ebook.data.descriptionbook.find(content => content.type === 'paragraph')?.text ?? '',
 
                 coverbook: ebook.data.coverbook.url,
+               
+               
                 updatedAt: new Date(ebook.last_publication_date).toLocaleDateString('pt-BR', {
                     day: "2-digit",
                     month: 'long',
@@ -88,7 +91,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
             <div className={styles.containerPost}>   <main className={styles.container}>
                 <div className={styles.posts}>
                     {ebooks.map(ebook => (<Link key={ebook.slug} legacyBehavior href={`/ebooks/${ebook.slug}`}>
-
+                   
                         <a key={ebook.slug}>
 
                             <div className={styles.imgbook}>
@@ -105,22 +108,21 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                                 <p>{ebook.descriptionbook}
                                 </p>
                                 <time>{ebook.updatedAt}</time>
-                               
-
-
                             
                             </div>
-                            
-
-                                
+                           
                         </a>
-
-                        
-                        
-                        
                        
+                    
+                        
+                        
+                        
+                   
 
-                    </Link>))}
+                    </Link>
+                    
+                    ))
+                    }
 
                     
                     <div className={styles.buttonNavigate}>
