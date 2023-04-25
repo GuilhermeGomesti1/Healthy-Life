@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
+import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter, FaShoppingCart } from 'react-icons/fa'
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
@@ -20,6 +20,7 @@ type Ebook = {
     coverbook: string,
     descriptionbook: string,
     updatedAt: string,
+    linkebook:string,
 }
 
 interface EbooksProps {
@@ -43,7 +44,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
             Prismic.Predicates.at('document.type', 'ebook')
         ], {
             orderings: '[document.last_publication_date desc]',
-            fetch: ['ebook.titlebook', 'ebook.descriptionbook', 'ebook.coverbook'],
+            fetch: ['ebook.titlebook', 'ebook.descriptionbook', 'ebook.coverbook',  'ebook.linkebook'],
             pageSize: 3,
             page: String(pageNumber)
         })
@@ -69,11 +70,11 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                     day: "2-digit",
                     month: 'long',
                     year: 'numeric'
-                })
+                }),
+                linkebook: ebook.data.linkebook.url
 
-
-            }
-        })
+            };
+        });
 
         setCurrentPage(pageNumber)
         setEbooks(getEbooks);
@@ -104,10 +105,24 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                                 <p>{ebook.descriptionbook}
                                 </p>
                                 <time>{ebook.updatedAt}</time>
+                               
+
+
+                            
                             </div>
+                            
+
+                                
                         </a>
 
+                        
+                        
+                        
+                       
+
                     </Link>))}
+
+                    
                     <div className={styles.buttonNavigate}>
                         {Number(currentPage) >= 2 && (
 
@@ -201,6 +216,6 @@ export const getStaticProps: GetStaticProps = async () => {
             page: response.page,
             totalPage: response.total_pages
         },
-        revalidate: 60 * 30 //atualiza a cada 30 minutos
+        revalidate: 60 * 1 //atualiza a cada 30 minutos
     }
 }

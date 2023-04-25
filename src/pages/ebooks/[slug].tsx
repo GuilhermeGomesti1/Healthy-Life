@@ -6,7 +6,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 import Head from 'next/head';
 import Image from 'next/image';
 import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter, FaShoppingCart } from 'react-icons/fa'
-
+import Prismic from '@prismicio/client';
 interface EbookProps {
     ebook: {
         slug: string,
@@ -14,6 +14,7 @@ interface EbookProps {
         descriptionbook: string,
         coverbook: string,
         updatedAt: string,
+        linkebook:string,
     }
 }
 
@@ -38,7 +39,7 @@ export default function Ebook({ ebook }: EbookProps) {
                        
                         <h1>{ebook.titlebook}</h1>
                         <time>{ebook.updatedAt}</time>
-                        <a className={styles.readyButton} type="button" href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">  Garanta já o seu! &nbsp;
+                        <a className={styles.readyButton} type="button" href={ebook.linkebook} target="_blank">  Garanta já o seu! &nbsp;
                     <FaShoppingCart size={25} /></a>
                       
                         <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: ebook.descriptionbook }}></div>
@@ -92,8 +93,12 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
         updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR', {
             day: '2-digit',
             month: 'long',
-            year: 'numeric'
-        })
+            year: 'numeric',
+
+           
+        }),
+        linkebook: response.data.linkebook.url,
+        
     }
 
 
