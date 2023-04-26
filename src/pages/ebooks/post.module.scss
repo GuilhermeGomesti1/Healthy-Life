@@ -27,7 +27,7 @@
     margin: 5rem auto 0;
 
 img{
-    height: 550px;
+             height: 550px;
                 width: 350px;
                 display: block;
                 margin: 0 auto;
@@ -42,7 +42,7 @@ img{
 h1{padding-top: 2rem;
     font-size: 2rem;
     font-weight: 900;
-    color: var(--gray-200);
+    color: var(--gray-);
     text-align: center;
     
 }
@@ -80,9 +80,11 @@ margin-bottom: -4rem;
 }
 .postContent{text-align: justify;
     margin-top: 5rem;
-    line-height: 2rem;
-    font-size: 1.125rem;
-    color: var(--gray-200);
+    
+   
+    color: var(--gray-);
+    font-size: 1.2rem;
+    line-height:2.25rem ;
 
     iframe{
         width: 100%;

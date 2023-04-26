@@ -30,7 +30,7 @@ img{
 h1{
     font-size: 2rem;
     font-weight: 900;
-    color: var(--gray-200);
+    color: var(--gray-);
     
 }
 time{
@@ -45,7 +45,11 @@ time{
     margin-top: 2rem;
     line-height: 2rem;
     font-size: 1.125rem;
-    color: var(--gray-200);
+    color: var(--gray-);
+    font-size: 1.2rem;
+    line-height:2.25rem ;
+        color: var(--gray-);
+        text-align: justify;
 
     iframe{
         width: 100%;

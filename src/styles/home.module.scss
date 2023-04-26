@@ -99,7 +99,7 @@
 img {
     max-width: 640px;
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.212);
-    //border-radius: 50%;
+    
     
     }
 
@@ -182,7 +182,7 @@ img {
     
     .ctaText {
         text-align: justify;
-        
+       
       margin-right: 4.5rem; /* altere o valor conforme necessário */
     }
   }
@@ -230,7 +230,9 @@ img {
     }
     
     span{
-        font-size: 1rem;
+        font-size: 1.2rem;
+    line-height:2.25rem ;
+        
         line-height:2.25rem ;
         color: var(--gray-);
         text-align: justify;
@@ -284,8 +286,8 @@ img {
     }
     
     span{
-        font-size: 1rem;
-        line-height:2.25rem ;
+        font-size: 1.2rem;
+    line-height:2.25rem ;
         color: var(--gray-);
         text-align: justify;
     }
