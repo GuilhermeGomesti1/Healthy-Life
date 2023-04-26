@@ -41,8 +41,7 @@ export default function Sobre({content}  : ContentProps){
                 
                 <h2>{content.title2}</h2>
                 <p>{content.text2about}</p>
-
-                <a href={content.youtube} target="_blank">
+        <div className={styles.icones}>   <a href={content.youtube} target="_blank">
                     <FaYoutube size={40}/>
 
                 </a>
@@ -65,7 +64,8 @@ export default function Sobre({content}  : ContentProps){
                 <a href={content.twitter} target="_blank">
                     <FaTwitter size={40}/>
                 </a>
-
+</div>
+             
             </section>
             <img
             src={content.banner}
