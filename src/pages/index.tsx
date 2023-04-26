@@ -55,6 +55,7 @@ export default function Home({ content }: ContentProps) {
                 titleContent}  </span>
 
               <h2>{content.title2gi1}</h2>
+              
 
 
               <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
@@ -134,7 +135,8 @@ export default function Home({ content }: ContentProps) {
                 <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
                   <a href="/ebooks">
                     <button>
-                      Ver tudo
+                    Garanta já o seu! 
+                   
                     </button>
                   </a>
                 </ActiveLink>

@@ -29,6 +29,8 @@
         
         
     };
+
+    
 }
 
 .ctaText{ text-align: justify;
@@ -42,6 +44,7 @@ h1{font-family: 'Allura', cursive;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif; 
   color: var(--gray-);
+  text-align: center;
 
   padding-top: 3rem;
     font-size: 3rem;
@@ -80,12 +83,14 @@ p{
 
 a svg {
     margin-top: 15px;
+    
 }
 svg{
     color: var(--gray-);
     cursor: pointer;
     margin-left: 15px;
     transition: 0.3s;
+    
     
 }
 svg:active {
@@ -107,8 +112,8 @@ svg:hover{
 
 
 @media (max-width: 1110px){
-    .containerHeader{
-      flex-direction: column;
+    .containerHeader{flex-direction: column-reverse; 
+      
       align-items: center;
       padding: 0.5rem 1rem;
   
@@ -116,7 +121,7 @@ svg:hover{
         max-width: 390px;
         padding: 1.5rem 0;
       }
-      
+     
     }
 
 
@@ -125,9 +130,10 @@ svg:hover{
         max-width: 450px;
       h1{
         font-size: 2.5rem;
+       
 
       }
-     
+      
     }
     
      
