@@ -86,7 +86,7 @@ export default function Home({ content }: ContentProps) {
 
 
             <section>
-              <h2>
+              <h2 className={styles.titledicas}>
                 {content.bloco2title}
               </h2>
               <span>
@@ -125,7 +125,7 @@ export default function Home({ content }: ContentProps) {
 
 
               <section>
-                <h2>
+                <h2 className={styles.titlebooks}>
                   {content.bloco3}
                 </h2>
                 <span>
@@ -134,7 +134,7 @@ export default function Home({ content }: ContentProps) {
 
                 <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
                   <a href="/ebooks">
-                    <button>
+                    <button className={styles.buttonbook}>
                     Garanta já o seu! 
                    
                     </button>

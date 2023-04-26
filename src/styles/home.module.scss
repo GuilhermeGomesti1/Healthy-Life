@@ -40,6 +40,12 @@
            background-color: var(--green-);
           
         }
+        .titledicas { //nome dicas e receitas
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 2rem;
+        }
 }
 
 
@@ -57,6 +63,13 @@
 .ebooks{
     background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
     width: 100%;
+
+    .titlebooks { //nome GIslene
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
 
  
 }
@@ -252,7 +265,7 @@ img {
     }
     
 
-    h2{padding-left: 3rem;
+    h2{
         font-size: 2.2rem;
         line-height:4.5rem ;
         font-weight:900 ;
@@ -267,11 +280,14 @@ img {
         color: var(--gray-);
         text-align: justify;
     }
-  button{
-    margin-left: 2rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+  .buttonbook{
+    display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+    
   }
+
 
   button:hover{
     background-color: var(--green-);
@@ -424,7 +440,7 @@ svg:hover{
             button{
                 //botao2
                display: block; 
-               margin-left: 2rem;
+               margin-left: 6rem;
               }
     
               img{ margin-top: 2rem;
@@ -442,7 +458,14 @@ svg:hover{
                 margin: 0 20px;
             }
 
-
+            .buttonbook{
+                display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 2rem;
+                    margin-bottom:2rem;
+                
+              }
 
 
         }
