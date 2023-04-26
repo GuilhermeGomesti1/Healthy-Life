@@ -10,7 +10,15 @@
         box-shadow: 60px -16px rgb(0, 0, 0);
         
   }
+ 
 }
+
+@media screen and (min-width: 768px) {
+    /* Regra para telas maiores que 768px de largura */
+    .area1 img {
+      margin-right: 2.5rem;
+    }
+  }
 
 .area2{
     background-color: var(--white-);
@@ -93,7 +101,7 @@ img {
        
 
     h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 4.5rem;
         font-weight: 900;
         margin-top: 2.5rem;
@@ -110,7 +118,7 @@ img {
     line-height:2.25rem ;
     color: var(--gray-); 
     text-align: justify;
-    margin-left: 3rem;
+    
     margin-right: 3rem;
    
     
@@ -123,7 +131,7 @@ img {
     background-color: var(--gray-);
     
     border: 0;
-    padding: 1rem 1.8rem;
+    padding: 1rem 2.5rem;
     margin-bottom: 2rem;
     margin-top: -2rem;
     
@@ -137,9 +145,19 @@ img {
        
     }
     
+    .center { //nome GIslene
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
 }
 
 @media screen and (min-width: 1000px) {
+    
+    
+    
     .ctaText {
         text-align: justify;
         
@@ -198,6 +216,7 @@ img {
     }
     
 }
+
 
 .ebookscontent{max-width: 600px;
     
@@ -267,7 +286,7 @@ img {
     height: auto;
 }
 .nextLevelContent{
-   
+    
     max-width: 1120px;
     margin: 6rem auto;
     display: flex;

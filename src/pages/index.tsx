@@ -47,9 +47,10 @@ export default function Home({ content }: ContentProps) {
 
         <div className={styles.area1}>
           <div className={styles.containerHeader}>
+          <img src={content.imagetop} alt='Conteúdos' />
 
             <section className={styles.ctaText}>
-              <h1>{content.title}</h1>
+              <h1 className={styles.center}>{content.title}</h1>
               <br />
               <span > {content.
                 titleContent}  </span>
@@ -71,8 +72,7 @@ export default function Home({ content }: ContentProps) {
             </section>
 
 
-            <img src={content.imagetop} alt='Conteúdos' />
-
+            
 
 
           </div>
