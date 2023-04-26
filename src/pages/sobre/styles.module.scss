@@ -115,11 +115,12 @@ svg:hover{
     .containerHeader{flex-direction: column-reverse; 
       
       align-items: center;
-      padding: 0.5rem 1rem;
+      
   
       img{
-        max-width: 390px;
-        padding: 1.5rem 0;
+        max-width: 100%;
+       border-radius: 0px;
+        box-shadow: none;
       }
      
     }
