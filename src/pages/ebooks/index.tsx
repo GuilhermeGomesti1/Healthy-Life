@@ -104,8 +104,8 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                                 />
                             </div>
                             <div className={styles.textbook}> <strong>{ebook.titlebook}</strong>
-
-                                <p>{ebook.descriptionbook}
+                                
+                                <p>{ebook.descriptionbook} <strong className={styles.cliqueesaibamais}> Clique e saiba mais! </strong>
                                 </p>
                                 <time>{ebook.updatedAt}</time>
                             
