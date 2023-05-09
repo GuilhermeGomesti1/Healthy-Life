@@ -39,7 +39,7 @@ O site foi entregue com sucesso ao cliente e está em pleno funcionamento.
 - Next-JS
 
 ## Back end
-- CSM- Prismic
+- CMS- Prismic
 
 
 
