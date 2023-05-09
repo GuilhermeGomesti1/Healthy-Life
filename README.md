@@ -36,7 +36,7 @@ O site foi entregue com sucesso ao cliente e está em pleno funcionamento.
 - SCSS 
 - JS 
 - TypeScript
-- ReactJS
+- Next-JS
 
 ## Back end
 - CSM- Prismic
