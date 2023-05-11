@@ -40,14 +40,9 @@ export default function Home({ content }: ContentProps) {
       </Head>
 
       <main className={styles.container}>
-
-
-
-
-
         <div className={styles.area1}>
           <div className={styles.containerHeader}>
-          <img src={content.imagetop} alt='Conteúdos' />
+            <img src={content.imagetop} alt='Conteúdos' />
 
             <section className={styles.ctaText}>
               <h1 className={styles.center}>{content.title}</h1>
@@ -56,9 +51,6 @@ export default function Home({ content }: ContentProps) {
                 titleContent}  </span>
 
               <h2>{content.title2gi1}</h2>
-              
-
-
               <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
                 <a href="/sobre">
                   <br />
@@ -71,17 +63,11 @@ export default function Home({ content }: ContentProps) {
 
             </section>
 
-
-            
-
-
           </div>
-
-
 
         </div>
 
-        <div className={styles.area2}>
+       <div className={styles.area2}>
           <div className={styles.sectionContent}>
 
 
@@ -101,8 +87,6 @@ export default function Home({ content }: ContentProps) {
               </ActiveLink>
             </section>
 
-
-
             <ActiveLink legacyBehavior href="/posts" activeClassName='' >
 
               <a href="/posts">
@@ -111,18 +95,12 @@ export default function Home({ content }: ContentProps) {
 
             </ActiveLink>
 
-
-
           </div>
 
           <div className={styles.ebooks}>
             <div className={styles.ebookscontent}>
 
               <img src={content.bloco3banner} alt="Conteudo " />
-
-
-
-
 
               <section>
                 <h2 className={styles.titlebooks}>
@@ -135,8 +113,8 @@ export default function Home({ content }: ContentProps) {
                 <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
                   <a href="/ebooks">
                     <button className={styles.buttonbook}>
-                    Garanta já o seu! 
-                   
+                      Garanta já o seu!
+
                     </button>
                   </a>
                 </ActiveLink>
@@ -146,9 +124,6 @@ export default function Home({ content }: ContentProps) {
 
         </div>
 
-
-     
-
         <div className={styles.area4}>
           <div className={styles.nextLevelContent}>
             <h2>
@@ -156,14 +131,6 @@ export default function Home({ content }: ContentProps) {
               "Honre sua <span className='styles.alunos'> saúde </span> com uma nutrição gentil." </h2>
 
             <div className={styles.imagelinks}>
-
-
-
-
-
-
-
-
 
               <a href="https://www.youtube.com/@nutravia_terra8284" target="_blank">
                 <FaYoutube size={40} />
@@ -192,19 +159,8 @@ export default function Home({ content }: ContentProps) {
               <a href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">
                 <FaShoppingCart size={40} />
               </a>
-               
-              
 
             </div>
-
-
-
-
-
-
-        
-
-
 
           </div>
 
@@ -214,7 +170,6 @@ export default function Home({ content }: ContentProps) {
     </>
   )
 }
-
 
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
@@ -242,16 +197,14 @@ export const getStaticProps: GetStaticProps = async () => {
     bloco3: RichText.asText(bloco_3),
     bloco3content: RichText.asText(bloco3content),
 
-
     footer: footer.url
-
 
   };
   return {
     props: {
       content
     },
-    revalidate: 60 * 1 // a cada 2 minutos
+    revalidate: 60 * 2 // a cada 2 minutos
   }
 }
 
