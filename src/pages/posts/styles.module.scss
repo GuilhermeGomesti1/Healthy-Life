@@ -19,14 +19,19 @@
     max-width: 720px;
     margin: auto;
     padding-top: 5rem;
+    
 
 
     a {
-        display: block;
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
         &+a {
             margin-top: 2rem;
             padding-top: 2rem;
+            
         }
 
         time {
@@ -44,7 +49,9 @@
             border-image: linear-gradiente(95deg, #FBD7CE, transparent) 1;
         }
 
-        strong {
+        strong {text-align: center;
+            align-items: center;
+            justify-content: center;
             font-family: 'Allura', cursive;
             font-family: 'Catamaran', sans-serif;
             font-family: 'DM Serif Display', serif;
@@ -56,12 +63,13 @@
             line-height: 2rem;
             color: var(--gray-);
             transition: color 0.3s;
+            align-items: center;
         }
 
         p { font-size: 1.2rem;
             line-height:2.25rem ;
                 color: var(--gray-);
-                
+                text-align: justify; 
             font-family: 'Allura', cursive;
             font-family: 'Catamaran', sans-serif;
             font-family: 'DM Serif Display', serif;
@@ -70,6 +78,9 @@
             color: var(--gray-);
             margin-top: 0.5rem;
             line-height: 1.62;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         &:hover strong {
