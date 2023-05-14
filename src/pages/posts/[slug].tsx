@@ -38,7 +38,9 @@ export default function Post({post}: PostProps ){
 
                 <h1>{post.title}</h1>
                 <time>{post.updatedAt}</time>
-                <div className={styles.postContent} dangerouslySetInnerHTML={{ __html:post.description}}></div>
+                <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: post.description.slice(post.description.indexOf(' ') + 13) }}></div>
+
+
 
             </article>
            

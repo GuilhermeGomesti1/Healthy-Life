@@ -78,7 +78,9 @@ p{margin: 1.2yrem;
    font-family: 'Open Sans', sans-serif;
    font-family: 'Roboto', sans-serif;
    font-family: 'Ubuntu', sans-serif;
-   color: var(--gray-)
+   word-spacing: normal;
+   text-justify: inter-word;
+   max-width:550px; 
 
 }
 
@@ -140,6 +142,10 @@ svg:hover{
     line-height:2.25rem ;
     color: var(--gray-);
         text-align: justify;
+        word-spacing: normal;
+   text-justify: inter-word;
+  
+  
       }
       .icones { 
         text-align: center; 

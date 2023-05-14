@@ -5,8 +5,7 @@
     background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
 }
 .container{
-    
-    
+   
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -42,14 +41,16 @@ time{
 
 }
 .postContent{
+   
     margin-top: 2rem;
     line-height: 2rem;
     font-size: 1.125rem;
     color: var(--gray-);
     font-size: 1.2rem;
-    line-height:2.25rem ;
-        color: var(--gray-);
-        text-align: justify;
+    line-height:2.25rem ; 
+  text-align: justify;
+  
+  
 
     iframe{
         width: 100%;
