@@ -489,10 +489,10 @@ svg:hover{
 //janela muito pequena
 @media (max-width: 950px){
     .container{
-        .containerHeader{
+        .containerHeader{margin-top: -2rem;
             flex-direction: column;
            
-
+          
             
             button{
                 width: 100%;
@@ -504,7 +504,7 @@ svg:hover{
         }
 
        
-        div img{ 
+        div img{  border-radius: 0;
             max-width: 400px;
         }
         div h1{
