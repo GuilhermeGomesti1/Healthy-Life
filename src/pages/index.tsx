@@ -7,7 +7,7 @@ import { ActiveLink } from '../components/ActiveLink';
 import { getPrismicClient } from '../services/prismic';
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
-
+import imgMobile from "../../public/images/imgmobile.png"
 type Content = {
 
   title: string;
@@ -44,6 +44,17 @@ export default function Home({ content }: ContentProps) {
           <div className={styles.containerHeader}>
             <img src={content.imagetop} alt='Conteúdos' />
 
+            <div>
+            <Image
+                className={styles.imgMobile}
+                src={imgMobile}
+                alt="foto home mobile"
+                width={390}
+                height={658}
+                loading="lazy"
+                placeholder="blur"
+              />
+            </div>
             <section className={styles.ctaText}>
               <h1 className={styles.center}>{content.title}</h1>
               <br />

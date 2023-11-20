@@ -18,6 +18,9 @@
     .area1 img {
       margin-right: 2.5rem;
     }
+    .imgMobile {
+        display: none;
+      }
   }
 
 .area2{
@@ -504,9 +507,16 @@ svg:hover{
         }
 
        
-        div img{  border-radius: 0;
-            max-width: 400px;
+        div img{  display: none;
+            border-radius: 0;
         }
+        .imgMobile {
+            display: flex;
+            margin: 0 auto;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+          }
         div h1{
             font-size: 3rem ;
          }
