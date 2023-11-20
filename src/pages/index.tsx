@@ -116,6 +116,7 @@ export default function Home({ content }: ContentProps) {
 
         </div>
 
+
         <div className={styles.area1}>
           <div className={styles.containerHeader}>
             <img src={content.imagetop} alt="Conteúdos" />

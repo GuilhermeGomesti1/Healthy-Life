@@ -4,12 +4,88 @@
 
 .area1{padding-top: 2rem;
     padding-bottom: 2rem;
-    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+  background-color: #FBD7CE;
     width: 100%;
-    img{border-radius: 3%;
+    justify-content: space-between;
+display: flex;
+
+
+    img{flex: 0 0 auto;
+        margin-right: 10rem; /* Ajuste o espaçamento entre a imagem e o conteúdo */
+        border-radius: 3%;
         box-shadow: 60px -16px rgb(0, 0, 0);
+        width:500px;
+        height: auto;
         
   }
+  .containerHeader { width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+ 
+
+  .ctaText{width: 100%;
+    text-align: justify;
+  
+
+       
+
+    h1{
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+        color: var(--gray-)
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+        color: var(--gray-)
+    }
+     span{ font-size: 1.2rem;
+    line-height:2.25rem ;
+    color: var(--gray-); 
+    text-align: justify;
+    
+    margin-right: 3rem;
+   
+    
+     
+     }
+
+
+     //primeiro botao
+     button{
+    background-color: var(--gray-);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    
+    border-radius: 7px;
+    color: var(--white-);
+    font-weight: bold;
+    transition: 1s;
+    }
+    button:hover{
+       background-color: var(--green-);
+       
+    }
+    
+    .center { //nome GIslene
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+}
  
 }
 
@@ -175,73 +251,8 @@ img {
     
 }
 
-.apresentacao{
-    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
-    width: 100%;
 
 
-}
-.ctaText{
-    text-align: justify;
-    max-width: 600px;
-
-       
-
-    h1{
-        font-size: 3rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-        margin-top: 2.5rem;
-        color: var(--gray-)
-    }
-    h2{
-        font-size: 2rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-        margin-top: 2.5rem;
-        color: var(--gray-)
-    }
-     span{ font-size: 1.2rem;
-    line-height:2.25rem ;
-    color: var(--gray-); 
-    text-align: justify;
-    
-    margin-right: 3rem;
-   
-    
-     
-     }
-
-
-     //primeiro botao
-     button{
-    background-color: var(--gray-);
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    border: 0;
-    padding: 1rem 2.5rem;
-    margin-bottom: 2rem;
-    margin-top: -2rem;
-    
-    border-radius: 7px;
-    color: var(--white-);
-    font-weight: bold;
-    transition: 1s;
-    }
-    button:hover{
-       background-color: var(--green-);
-       
-    }
-    
-    .center { //nome GIslene
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2rem;
-    }
-    
-}
 
 @media screen and (min-width: 1000px) {
     
@@ -557,6 +568,7 @@ svg:hover{
 @media (max-width: 950px){
     .container{
         .homegislene{display: none;}
+        
         .containerHeader{margin-top: -2rem;
             flex-direction: column;
            
@@ -615,7 +627,9 @@ svg:hover{
     display: none;
   }
        
-        div img{  display: none;
+        div img{margin-top: 2rem;
+             margin-left:  auto;
+             width: 100%;;
             border-radius: 0;
         }
         .imgMobile {
