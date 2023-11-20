@@ -15,6 +15,7 @@
 
 }
 
+.dicaserec{display: none;}
 .posts {
     max-width: 720px;
     margin: auto;
@@ -86,7 +87,7 @@
         &:hover strong {
             color: #7A6964,
         }
-       
+      
 
     }
    
@@ -134,5 +135,14 @@
      
 
     }
+    
+  
+    }
+    .dicaserec{
+        display: flex;
+        margin: 0 auto;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
     }
 }
