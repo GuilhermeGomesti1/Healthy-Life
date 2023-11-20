@@ -1,148 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap");
 
 .containerPost {
-    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+  background-image: linear-gradient(to right, #e3b198, #fbd7ce, #fff);
 }
 
 .container {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 2rem;
-
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.dicaserec{display: none;}
+.dicaserec {
+  display: none;
+}
 .posts {
-    max-width: 720px;
-    margin: auto;
-    padding-top: 5rem;
-    
+  max-width: 720px;
+  margin: auto;
+  padding-top: 5rem;
 
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    a {
-        display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-        &+a {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            
-        }
-
-        time {
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        img {
-            max-width: 100%;
-            max-height: 410px;
-            border: 2px solid var(--white-);
-            border-radius: 6px;
-            border-image: linear-gradiente(95deg, #FBD7CE, transparent) 1;
-        }
-
-        strong {text-align: center;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Allura', cursive;
-            font-family: 'Catamaran', sans-serif;
-            font-family: 'DM Serif Display', serif;
-            font-family: 'Open Sans', sans-serif;
-            font-family: 'Roboto', sans-serif;
-            display: block;
-            font-size: 1.5rem;
-            margin: 1rem 0;
-            line-height: 2rem;
-            color: var(--gray-);
-            transition: color 0.3s;
-            align-items: center;
-        }
-
-        p { font-size: 1.2rem;
-            line-height:2.25rem ;
-                color: var(--gray-);
-                text-align: justify; 
-            font-family: 'Allura', cursive;
-            font-family: 'Catamaran', sans-serif;
-            font-family: 'DM Serif Display', serif;
-            font-family: 'Open Sans', sans-serif;
-            font-family: 'Roboto', sans-serif;
-            color: var(--gray-);
-            margin-top: 0.5rem;
-            line-height: 1.62;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &:hover strong {
-            color: #7A6964,
-        }
-      
-
+    & + a {
+      margin-top: 2rem;
+      padding-top: 2rem;
     }
-   
+
+    time {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 410px;
+      border: 2px solid var(--white-);
+      border-radius: 6px;
+      border-image: linear-gradiente(95deg, #fbd7ce, transparent) 1;
+    }
+
+    strong {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-family: "Allura", cursive;
+      font-family: "Catamaran", sans-serif;
+      font-family: "DM Serif Display", serif;
+      font-family: "Open Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      display: block;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      line-height: 2rem;
+      color: var(--gray-);
+      transition: color 0.3s;
+      align-items: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2.25rem;
+      color: var(--gray-);
+      text-align: justify;
+      font-family: "Allura", cursive;
+      font-family: "Catamaran", sans-serif;
+      font-family: "DM Serif Display", serif;
+      font-family: "Open Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      color: var(--gray-);
+      margin-top: 0.5rem;
+      line-height: 1.62;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover strong {
+      color: #7a6964;
+    }
+  }
 }
 .posts a:active {
-    cursor: progress;
+  cursor: progress;
 }
 
 .buttonNavigate {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  div {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+  }
 
-    div {
-        display: flex;
-        flex-direction: row;
+  button {
+    margin: 0 5px;
+    border: 0;
+    background-color: var(--brown-);
+    color: var(--white-);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
 
+    svg {
+      padding: 0 3px;
     }
-
-    button {
-        margin: 0 5px;
-        border: 0;
-        background-color: var(--brown-);
-        color: var(--white-);
-        display: flex;
-        padding: 0.5rem;
-        border-radius: 5px;
-        margin-bottom: 3rem;
-
-        svg {
-            padding: 0 3px;
-        }
-    }
-
+  }
 }
 
-@media (max-width: 600px){
-    .posts a { text-align: center;
-            img{
-         margin: 0 auto;
-        max-width: 290px;
-        max-height: 200px;
-     
-
+@media (max-width: 600px) {
+  .posts a {
+    text-align: center;
+    img {
+      margin: 0 auto;
+      max-width: 290px;
+      max-height: 200px;
     }
-    
-  
-    }
-    .dicaserec{
-        display: flex;
-        margin: 0 auto;
-        background-color: white;
-        align-items: center;
-        justify-content: center;
-    }
+  }
+  .dicaserec {
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+  }
 }
