@@ -2,8 +2,10 @@
     height:  3.5rem;
     border-bottom: 1px solid var(--white-) ;
     box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.144);
-    
-    //background: #FFEBF9;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+  background-color: white;
 
 }
 
@@ -87,10 +89,10 @@
 @media (max-width: 870px){
 
   .headerContainer{
-      height: 11rem;
+      height: 3rem;
       padding: 0.5rem 0;
-      margin-top: -2rem;
-      margin-bottom: -6rem;
+     
+   
      .logo{display: none;
                 
      }  
@@ -109,6 +111,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: -2rem;
+        
       }
   
       .readyButton{
