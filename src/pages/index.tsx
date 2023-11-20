@@ -87,17 +87,7 @@ export default function Home({ content }: ContentProps) {
                 </button>
               </Link>
 
-              <Link href={"/ebooks"} className={styles.buttonContainer}>
-                <button className={styles.buttons}>
-                  <span className={styles.iconButton}>
-                   <IconEbook/>
-                  </span>
-                  <span className={styles.titleButton}>EBOOKS</span>
-                  <span className={styles.subtitleButton}>
-                  Os meus eBooks de receitas saudáveis são uma coleção de guias culinários que ajudam as pessoas a adotar um estilo de vida mais saudável sem comprometer o sabor da comida.
-                  </span>
-                </button>
-              </Link>
+             
 
               <Link href={"/"} className={styles.buttonContainer}>
                 <button className={styles.buttons}>
@@ -107,6 +97,18 @@ export default function Home({ content }: ContentProps) {
                   <span className={styles.titleButton}> DICAS E RECEITAS</span>
                   <span className={styles.subtitleButton}>
                   Nossas dicas ajudarão você a fazer escolhas alimentares saudáveis e a desenvolver hábitos alimentares equilibrados. 
+                  </span>
+                </button>
+              </Link>
+
+              <Link href={"/ebooks"} className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}>
+                   <IconEbook/>
+                  </span>
+                  <span className={styles.titleButton}>EBOOKS</span>
+                  <span className={styles.subtitleButton}>
+                  Os meus eBooks de receitas saudáveis são uma coleção de guias culinários que ajudam as pessoas a adotar um estilo de vida mais saudável sem comprometer o sabor da comida.
                   </span>
                 </button>
               </Link>
