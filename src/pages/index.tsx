@@ -1,20 +1,31 @@
-import { GetStaticProps } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import { FaYoutube, FaInstagram, FaWhatsapp, FaFacebook, FaTwitter, FaShoppingCart } from 'react-icons/fa'
-import styles from '../styles/home.module.scss';
-import { ActiveLink } from '../components/ActiveLink';
-import { getPrismicClient } from '../services/prismic';
-import Prismic from '@prismicio/client';
-import { RichText } from 'prismic-dom';
-import imgMobile from "../../public/images/imgmobile.png"
+import { GetStaticProps } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import { IconSobremim } from "../components/icons/iconsHome/iconSobremim";
+import { IconEbook } from "../components/icons/iconsHome/iconEbook";
+import { IconDicas } from "../components/icons/iconsHome/iconDicas";
+import {
+  FaYoutube,
+  FaInstagram,
+  FaWhatsapp,
+  FaFacebook,
+  FaTwitter,
+  FaShoppingCart,
+} from "react-icons/fa";
+import styles from "../styles/home.module.scss";
+import { ActiveLink } from "../components/ActiveLink";
+import { getPrismicClient } from "../services/prismic";
+import Prismic from "@prismicio/client";
+import { RichText } from "prismic-dom";
+import imgMobile from "../../public/images/imgmobile.png";
+import homegislene from "../../public/images/homegislene.png";
+import Link from "next/link";
 type Content = {
-
   title: string;
   titleContent: string;
   linkAction: string;
-  imagetop: string,
-  title2gi1: string,
+  imagetop: string;
+  title2gi1: string;
   bloco2title: string;
   bloco2content: string;
   bloco2banner: string;
@@ -25,177 +36,225 @@ type Content = {
   bloco4: string;
   bloco4content: string;
   footer: string;
-
-}
+};
 
 interface ContentProps {
-  content: Content
+  content: Content;
 }
 export default function Home({ content }: ContentProps) {
   //console.log(content)
-  ; return (
+  return (
     <>
       <Head>
         <title>Gislene Oliveira | Home </title>
       </Head>
 
       <main className={styles.container}>
-        <div className={styles.area1}>
-          <div className={styles.containerHeader}>
-            <img src={content.imagetop} alt='Conteúdos' />
+        <div className={styles.home}>
+          <Image
+            className={styles.homegislene}
+            src={homegislene}
+            alt="foto dos alunos"
+            width={1833}
+            height={911}
+            loading="lazy"
+            placeholder="blur"
+          />
 
-            <div>
+          <div>
             <Image
-                className={styles.imgMobile}
-                src={imgMobile}
-                alt="foto home mobile"
-                width={390}
-                height={658}
-                loading="lazy"
-                placeholder="blur"
-              />
-            </div>
-            <section className={styles.ctaText}>
-              <h1 className={styles.center}>{content.title}</h1>
-              <br />
-              <span > {content.
-                titleContent}  </span>
-
-              <h2>{content.title2gi1}</h2>
-              <ActiveLink legacyBehavior href="/sobre" activeClassName='sobre' >
-                <a href="/sobre">
-                  <br />
-                  <button>
-                    Sobre mim
-                  </button>
-                </a>
-              </ActiveLink>
-
-
-            </section>
-
+              className={styles.imgMobile}
+              src={imgMobile}
+              alt="foto home mobile"
+              width={390}
+              height={658}
+              loading="lazy"
+              placeholder="blur"
+            />
           </div>
+
+
+          <div className={styles.buttonGroup}>
+              <Link href={"/sobre"} className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}>
+                   <IconSobremim/>
+                  </span>
+                  <span className={styles.titleButton}>SOBRE MIM</span>
+                  <span className={styles.subtitleButton}>
+                  Falar sobre comida é um presente, pois acredito que a alimentação saudável vai além de nutrientes, é uma questão de saúde.
+                  </span>
+                </button>
+              </Link>
+
+              <Link href={"/ebooks"} className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}>
+                   <IconEbook/>
+                  </span>
+                  <span className={styles.titleButton}>EBOOKS</span>
+                  <span className={styles.subtitleButton}>
+                  Os meus eBooks de receitas saudáveis são uma coleção de guias culinários que ajudam as pessoas a adotar um estilo de vida mais saudável sem comprometer o sabor da comida.
+                  </span>
+                </button>
+              </Link>
+
+              <Link href={"/"} className={styles.buttonContainer}>
+                <button className={styles.buttons}>
+                  <span className={styles.iconButton}>
+                    <IconDicas/>
+                  </span>
+                  <span className={styles.titleButton}> DICAS E RECEITAS</span>
+                  <span className={styles.subtitleButton}>
+                  Nossas dicas ajudarão você a fazer escolhas alimentares saudáveis e a desenvolver hábitos alimentares equilibrados. 
+                  </span>
+                </button>
+              </Link>
+            </div>
 
         </div>
 
-       <div className={styles.area2}>
+        <div className={styles.area1}>
+          <div className={styles.containerHeader}>
+            <img src={content.imagetop} alt="Conteúdos" />
+
+            <section className={styles.ctaText}>
+              <h1 className={styles.center}>{content.title}</h1>
+              <br />
+              <span> {content.titleContent} </span>
+
+              <h2>{content.title2gi1}</h2>
+              <ActiveLink legacyBehavior href="/sobre" activeClassName="sobre">
+                <a href="/sobre">
+                  <br />
+                  <button>Sobre mim</button>
+                </a>
+              </ActiveLink>
+            </section>
+          </div>
+        </div>
+
+        <div className={styles.area2}>
           <div className={styles.sectionContent}>
-
-
             <section>
-              <h2 className={styles.titledicas}>
-                {content.bloco2title}
-              </h2>
-              <span>
-                {content.bloco2content}
-              </span> <br></br>
-              <ActiveLink legacyBehavior href="/posts" activeClassName='posts' >
+              <h2 className={styles.titledicas}>{content.bloco2title}</h2>
+              <span>{content.bloco2content}</span> <br></br>
+              <ActiveLink legacyBehavior href="/posts" activeClassName="posts">
                 <a href="/posts">
-                  <button>
-                    Confira aqui!
-                  </button>
+                  <button>Confira aqui!</button>
                 </a>
               </ActiveLink>
             </section>
 
-            <ActiveLink legacyBehavior href="/posts" activeClassName='' >
-
+            <ActiveLink legacyBehavior href="/posts" activeClassName="">
               <a href="/posts">
                 <img src={content.bloco2banner} alt="Conteudo " />
               </a>
-
             </ActiveLink>
-
           </div>
 
           <div className={styles.ebooks}>
             <div className={styles.ebookscontent}>
-
               <img src={content.bloco3banner} alt="Conteudo " />
 
               <section>
-                <h2 className={styles.titlebooks}>
-                  {content.bloco3}
-                </h2>
-                <span>
-                  {content.bloco3content}
-                </span>
+                <h2 className={styles.titlebooks}>{content.bloco3}</h2>
+                <span>{content.bloco3content}</span>
 
-                <ActiveLink legacyBehavior href="/ebooks" activeClassName='ebooks' >
+                <ActiveLink
+                  legacyBehavior
+                  href="/ebooks"
+                  activeClassName="ebooks"
+                >
                   <a href="/ebooks">
                     <button className={styles.buttonbook}>
                       Garanta já o seu!
-
                     </button>
                   </a>
                 </ActiveLink>
               </section>
             </div>
           </div>
-
         </div>
 
         <div className={styles.area4}>
           <div className={styles.nextLevelContent}>
             <h2>
-
-              "Honre sua <span className='styles.alunos'> saúde </span> com uma nutrição gentil." </h2>
+              "Honre sua <span className="styles.alunos"> saúde </span> com uma
+              nutrição gentil."{" "}
+            </h2>
 
             <div className={styles.imagelinks}>
-
-              <a href="https://www.youtube.com/@nutravia_terra8284" target="_blank">
+              <a
+                href="https://www.youtube.com/@nutravia_terra8284"
+                target="_blank"
+              >
                 <FaYoutube size={40} />
-
               </a>
 
-              <a href="https://www.instagram.com/gislenejm/?igshid=YmMyMTA2M2Y=" target="_blank">
+              <a
+                href="https://www.instagram.com/gislenejm/?igshid=YmMyMTA2M2Y="
+                target="_blank"
+              >
                 <FaInstagram size={40} />
-
               </a>
 
-              <a href="https://www.facebook.com/gislene.oliveira.7712" target="_blank">
+              <a
+                href="https://www.facebook.com/gislene.oliveira.7712"
+                target="_blank"
+              >
                 <FaFacebook size={40} />
-
               </a>
 
-              <a href="https://api.whatsapp.com/send/?phone=5531984091588&text=Contato&type=phone_number&app_absent=0" target="_blank">
+              <a
+                href="https://api.whatsapp.com/send/?phone=5531984091588&text=Contato&type=phone_number&app_absent=0"
+                target="_blank"
+              >
                 <FaWhatsapp size={40} />
-
               </a>
 
               <a href="https://twitter.com/gislenejm?s=11" target="_blank">
                 <FaTwitter size={40} />
               </a>
 
-              <a href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C" target="_blank">
+              <a
+                href="https://hotmart.com/pt-br/marketplace/produtos/receitas-de-cafe-da-manha-praticas-e-saudaveis/H76773796C"
+                target="_blank"
+              >
                 <FaShoppingCart size={40} />
               </a>
-
             </div>
-
           </div>
-
         </div>
-
       </main>
     </>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
   const response = await prismic.query([
-    Prismic.Predicates.at('document.type', 'home')
-  ])
+    Prismic.Predicates.at("document.type", "home"),
+  ]);
   //console.log(response.results[0].data);
 
   const {
-    title, sub_title, link_action, imagetop, title2gi1, bloco2, bloco2content, bloco_2_baner, bloco3banner, bloco_3, bloco3content, footer
+    title,
+    sub_title,
+    link_action,
+    imagetop,
+    title2gi1,
+    bloco2,
+    bloco2content,
+    bloco_2_baner,
+    bloco3banner,
+    bloco_3,
+    bloco3content,
+    footer,
   } = response.results[0].data;
 
   const content = {
-
     title: RichText.asText(title),
     titleContent: RichText.asText(sub_title),
     imagetop: imagetop.url,
@@ -208,15 +267,12 @@ export const getStaticProps: GetStaticProps = async () => {
     bloco3: RichText.asText(bloco_3),
     bloco3content: RichText.asText(bloco3content),
 
-    footer: footer.url
-
+    footer: footer.url,
   };
   return {
     props: {
-      content
+      content,
     },
-    revalidate: 60 * 2 // a cada 2 minutos
-  }
-}
-
-
+    revalidate: 60 * 2, // a cada 2 minutos
+  };
+};

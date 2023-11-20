@@ -14,7 +14,70 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* Regra para telas maiores que 768px de largura */
+   
+
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25rem;
+  }
+  .buttonContainer {
+    margin-bottom: 10rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons {
+    border: none;
+    background-color: white;
+    width: 280px;
+    height: 270px;
+  
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.158), 0 2px 5px rgba(0, 0, 0, 0.137);
+    margin: 0 20px;
+    margin-top: -4rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      box-shadow 500ms linear;
+  }
+  
+  .buttons:hover {
+    transform: scale(1.05);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .iconButton {
+    margin-bottom: 10px;
+    display: block;
+    align-items: center;
+  }
+  
+  .titleButton {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .subtitleButton {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 1rem;
+  }
+
+
+
     .area1 img {
       margin-right: 2.5rem;
     }
@@ -492,6 +555,7 @@ svg:hover{
 //janela muito pequena
 @media (max-width: 950px){
     .container{
+        .homegislene{display: none;}
         .containerHeader{margin-top: -2rem;
             flex-direction: column;
            
@@ -506,8 +570,51 @@ svg:hover{
             }
         }
 
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .buttonContainer { margin-left: 2rem;
+    border: none;
+    margin-top: -25rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    background-color: transparent;
+    border: none;
+    margin: 0 10px;
+   
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+  }
+
+  .iconButton {
+    margin-bottom: 2px;
+    display: block;
+    align-items: center;
+  }
+
+  .titleButton {
+   
+    font-size: 0.8rem;
+
+  
+  }
+
+  .subtitleButton {
+    display: none;
+  }
        
-        div img{  display: none;
+        div img{  
             border-radius: 0;
         }
         .imgMobile {
