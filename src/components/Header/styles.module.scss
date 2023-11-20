@@ -20,7 +20,7 @@
   
   
   
-    nav{
+    nav{ font-size: 0.8rem;
         margin-left: auto;
         height: 6rem;
       
@@ -61,12 +61,12 @@
   }
 
 .readyButton{
-   
-    height: 2.5rem;
+  
+    height: 2.2rem;
     border-radius: 3rem;
     background: var(--green-);
     border: 0;
-    padding: 0 1.5rem;
+    padding: 0 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;

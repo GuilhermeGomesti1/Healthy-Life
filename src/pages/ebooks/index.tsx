@@ -91,7 +91,9 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
             <div className={styles.containerPost}>   <main className={styles.container}>
                 <div className={styles.posts}>
                     {ebooks.map(ebook => (<Link key={ebook.slug} legacyBehavior href={`/ebooks/${ebook.slug}`}>
-                   
+
+
+                    <div className={styles.divbook}>
                         <a key={ebook.slug}>
 
                             <div className={styles.imgbook}>
@@ -105,14 +107,14 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                             </div>
                             <div className={styles.textbook}> <strong>{ebook.titlebook}</strong>
                                 
-                                <p>{ebook.descriptionbook} <strong className={styles.cliqueesaibamais}> Clique e saiba mais! </strong>
+                                <p> <strong className={styles.cliqueesaibamais}> Clique e saiba mais! </strong>
                                 </p>
                                 <time>{ebook.updatedAt}</time>
                             
                             </div>
                            
                         </a>
-                       
+                        </div>
                     
                         
                         
