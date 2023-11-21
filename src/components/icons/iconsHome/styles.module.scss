@@ -3,7 +3,7 @@
    
     
    
-    color: #ee65c054;
+    color: #ee65c0b0;
     background-color:white;
     font-size: 40px;
     border-radius: 50%;
@@ -11,17 +11,38 @@
 
 .iconEbook{
 
-    color: #ee65c054;
+    color: #ee65c0b0;
     background-color:white;
     font-size: 40px;
     border-radius: 50%;
 }
 
 .iconDicas{
-    color: #ee65c054;
+    color: #ee65c0b0;
     background-color:white;
     font-size: 40px;
     border-radius: 50%;
 }
 
 
+@media (max-width: 768px){
+    .IconSobremim{
+
+
+    
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.120), 0 2px 5px rgba(0, 0, 0, 0.120);
+       
+    }
+    
+    .iconEbook{
+
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.120), 0 2px 5px rgba(0, 0, 0, 0.120);
+      
+    }
+    
+    .iconDicas{
+      
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.120), 0 2px 5px rgba(0, 0, 0, 0.120);
+    }
+    
+}
