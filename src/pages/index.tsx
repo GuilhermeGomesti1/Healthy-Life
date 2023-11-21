@@ -19,6 +19,9 @@ import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
 import imgMobile from "../../public/images/imgmobile.png";
 import homegislene from "../../public/images/homegislene.png";
+import sobremim from "../../public/images/sobremim.png";
+
+
 import Link from "next/link";
 type Content = {
   title: string;
@@ -116,9 +119,24 @@ export default function Home({ content }: ContentProps) {
 
         </div>
 
+        <div className={styles.divsobremimTitle}>
+            <Image
+              className={styles.sobremimTitle}
+              src={sobremim}
+              alt="Sobre mim titulo"
+              width={390}
+              height={658}
+              loading="lazy"
+              placeholder="blur"
+            />
+          </div>
 
         <div className={styles.area1}>
+       
           <div className={styles.containerHeader}>
+
+         
+        
             <img src={content.imagetop} alt="Conteúdos" />
 
             <section className={styles.ctaText}>
@@ -130,7 +148,7 @@ export default function Home({ content }: ContentProps) {
               <ActiveLink legacyBehavior href="/sobre" activeClassName="sobre">
                 <a href="/sobre">
                   <br />
-                  <button>Sobre mim</button>
+                  <button>Saiba mais</button>
                 </a>
               </ActiveLink>
             </section>
