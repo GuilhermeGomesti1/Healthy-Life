@@ -1,19 +1,19 @@
 .container{
     display: block;
-    .divsobremimTitle{background-color: #FBD7CE;
-        align-items: center;
- 
-        .sobremimTitle{  box-shadow: none;
-            width:350px;
-            height: 240px;
-            display: flex;
-            align-items: center;
-            padding-top: 4rem;
-          margin-left:  auto;
-          margin-right: auto;
-          
-          }
+    .divsobremimTitle{display: none;    
      }
+     .divsobremimWeb{width: 100%;
+        align-items: center;
+        display: flex;
+        background-color: #FBD7CE;
+       .sobremimWeb{margin-left: auto;
+        margin-right: auto;
+            margin-top: 4rem;
+            margin-bottom: -4rem;
+          
+       }
+      }
+
 }
 
 .area1{padding-top: 2rem;
@@ -594,13 +594,15 @@ svg:hover{
                 align-items: center;
                 margin-top: -4rem;
               margin-left:  auto;
-              margin-right: auto;
-             
-              
+              margin-right: auto;        
               }
+             
          }
        
-            
+         .divsobremimWeb{
+            display: none;
+           
+          }
         .homegislene{display: none;}
         
         .containerHeader{margin-top: -2rem;

@@ -20,7 +20,7 @@ import { RichText } from "prismic-dom";
 import imgMobile from "../../public/images/imgmobile.png";
 import homegislene from "../../public/images/homegislene.png";
 import sobremim from "../../public/images/sobremim.png";
-
+import sobremimWeb from "../../public/images/sobremimWeb.png";
 
 import Link from "next/link";
 type Content = {
@@ -126,6 +126,18 @@ export default function Home({ content }: ContentProps) {
               alt="Sobre mim titulo"
               width={390}
               height={658}
+              loading="lazy"
+              placeholder="blur"
+            />
+          </div>
+
+          <div className={styles.divsobremimWeb}>
+            <Image
+              className={styles.sobremimWeb}
+              src={sobremimWeb}
+              alt="Sobre mim titulo"
+              width={650}
+            height={183}
               loading="lazy"
               placeholder="blur"
             />
