@@ -227,7 +227,7 @@ display: flex;
     
 }
 .ebooks{
-    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+    background-color: #FBD7CE;
     width: 100%;
 
     .titlebooks { //nome GIslene
@@ -582,19 +582,21 @@ svg:hover{
 
 //janela muito pequena
 @media (max-width: 950px){
-    .container{
-        
+    .container{ 
+        background-color: #FBD7CE;
         .divsobremimTitle{background-color: #FBD7CE;
             align-items: center;
-     
+            display: flex;
+            width: 100%;
             .sobremimTitle{  box-shadow: none;
                 width:100%;
                 height: 100%;
                 display: flex;
                 align-items: center;
-                margin-top: -4rem;
+                margin-top: 0;
               margin-left:  auto;
-              margin-right: auto;        
+              margin-right: auto;   
+                   margin-bottom: -1rem;
               }
              
          }
@@ -607,7 +609,7 @@ svg:hover{
         
         .containerHeader{margin-top: -2rem;
             flex-direction: column;
-             .ctaText{
+             .ctaText{  margin-bottom: -6rem;
         
                
         
@@ -690,13 +692,13 @@ svg:hover{
          }
          .sectionContent{
             flex-direction: column;
-            
-   
+       
+            margin-bottom: -4rem;
          }
 
        
          //botao 2 e img 2 tela pequena
-         .area2{
+         .area2{ 
                 button{
                     width: 100%;
                     display: flex ;
@@ -712,10 +714,10 @@ svg:hover{
             }
     }
 
-    .ebooks{ 
+    .ebooks{  
         .ebookscontent{  
             flex-direction: column;
-            
+            margin-bottom: -6rem;
           
             img{ 
                 margin-top: 2rem;
@@ -761,7 +763,7 @@ svg:hover{
 
     }
 
-    .area4 {
+    .area4 { 
         h2 {   font-size: 2rem;
             text-align: center;
             margin: 0 auto;
