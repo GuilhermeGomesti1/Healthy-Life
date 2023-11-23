@@ -153,7 +153,7 @@ export default function Posts({
                 </a>
               </Link>
             ))}
-            <div  className={`${styles.buttonNavigate} animated-item`}>  
+            <div  className={styles.buttonNavigate}>  
               {Number(currentPage) >= 2 && (
                 <div>
                   <button onClick={() => navigatePage(1)}>
