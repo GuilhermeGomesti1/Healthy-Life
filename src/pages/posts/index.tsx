@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -153,15 +153,20 @@ export default function Posts({
                 </a>
               </Link>
             ))}
-            <div  className={styles.buttonNavigate}>  
+           
+          </div>
+        </main>
+
+      </div>
+       <div  className={styles.buttonNavigate}>  
               {Number(currentPage) >= 2 && (
                 <div>
-                  <button title="Voltar Tudo" onClick={() => navigatePage(1)}>
+                   {/* <button title="Voltar Tudo" onClick={() => navigatePage(1)}>
                     <FiChevronsLeft size={25} color="#fff" />
-                  </button>
+              </button>   */}
 
                   <button title="Voltar" onClick={() => navigatePage(Number(currentPage - 1))}>
-                    <FiChevronLeft size={25} color="#fff" />
+                    <FaArrowLeft size={40} color="#fff" />
                   </button>
                 </div>
               )}
@@ -169,18 +174,15 @@ export default function Posts({
               {Number(currentPage) < Number(totalPage) && (
                 <div>
                   <button title=" Próxima" onClick={() => navigatePage(Number(currentPage + 1))}>
-                    <FiChevronRight size={25} color="#fff" />
+                  <FaArrowRight size={40} color="#fff" />
                   </button>
 
-                  <button title="Última" onClick={() => navigatePage(Number(totalPage))}>
+                { /* <button title="Última" onClick={() => navigatePage(Number(totalPage))}>
                     <FiChevronsRight size={25} color="#fff" />
-                  </button>
+              </button>  */ }
                 </div>
               )}
             </div>
-          </div>
-        </main>
-      </div>
     </>
   );
 }
