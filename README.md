@@ -4,7 +4,7 @@ https://healthy-life-3x0qh2huz-guilhermegomesti1.vercel.app/
 
 First, run the development server:
 
-npm run dev 
+npm run dev  
 or
 yarn dev
 Open http://localhost:3000 with your browser to see the result.
