@@ -5,7 +5,7 @@ import { RichText } from "prismic-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import Head from "next/head";
 import Image from "next/image";
-import dicas from "../../../public/images/dicas.png"
+import dicas from "../../../public/images/dicas.png";
 interface PostProps {
   post: {
     slug: string;
@@ -23,16 +23,16 @@ export default function Post({ post }: PostProps) {
         <title>{post.title}</title>
       </Head>
       <div>
-            <Image
-              className={`${styles.dicas} animated-item`}
-                src={dicas}
-                alt="foto home mobile"
-                width={530}
-                height={325}
-                loading="lazy"
-                placeholder="blur"
-              />
-            </div>
+        <Image
+          className={`${styles.dicas} animated-item`}
+          src={dicas}
+          alt="foto home mobile"
+          width={530}
+          height={325}
+          loading="lazy"
+          placeholder="blur"
+        />
+      </div>
       <div className={styles.allpage}>
         <main className={styles.container}>
           <article className={styles.post}>
