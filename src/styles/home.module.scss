@@ -1,121 +1,113 @@
-.container{
-    display: block;
-    .divsobremimTitle{display: none;    
-     }
-     .divsobremimWeb{width: 100%;
-        align-items: center;
-        display: flex;
-        background-color: #FBD7CE;
-       .sobremimWeb{margin-left: auto;
-        margin-right: auto;
-            margin-top: 4rem;
-            margin-bottom: -4rem;
-          
-       }
-      }
-
+.container {
+  display: block;
+  .divsobremimTitle {
+    display: none;
+  }
+  .divsobremimWeb {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: #fbd7ce;
+    .sobremimWeb {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4rem;
+      margin-bottom: -4rem;
+    }
+  }
 }
 
-.area1{padding-top: 2rem;
-    padding-bottom: 2rem;
-  background-color: #FBD7CE;
-    width: 100%;
-    justify-content: space-between;
-display: flex;
+.area1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fbd7ce;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
 
-
-    img{flex: 0 0 auto;
-        margin-right: 10rem; /* Ajuste o espaçamento entre a imagem e o conteúdo */
-        border-radius: 3%;
-        box-shadow: 60px -16px rgb(0, 0, 0);
-        width:500px;
-        height: auto;
-        
+  img {
+    flex: 0 0 auto;
+    margin-right: 10rem; /* Ajuste o espaçamento entre a imagem e o conteúdo */
+    border-radius: 3%;
+    box-shadow: 60px -16px rgb(0, 0, 0);
+    width: 500px;
+    height: auto;
   }
- 
- 
-  .containerHeader { width: 100%;
+
+  .containerHeader {
+    width: 100%;
     display: flex;
     align-items: center;
   }
-  
- 
 
-  .ctaText{width: 100%;
+  .ctaText {
+    width: 100%;
     text-align: justify;
-  
+    margin-left: 4rem;
 
-       
+    h1 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      font-weight: 900;
+      margin-top: 2.5rem;
+      color: var(--gray-);
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 4.5rem;
+      font-weight: 900;
+      margin-top: 2.5rem;
+      color: var(--gray-);
+    }
+    span {
+      font-size: 1.2rem;
+      line-height: 2.25rem;
+      color: var(--gray-);
+      text-align: justify;
 
-    h1{
-        font-size: 3rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-        margin-top: 2.5rem;
-        color: var(--gray-)
+      margin-right: 3rem;
     }
-    h2{
-        font-size: 2rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-        margin-top: 2.5rem;
-        color: var(--gray-)
-    }
-     span{ font-size: 1.2rem;
-    line-height:2.25rem ;
-    color: var(--gray-); 
-    text-align: justify;
-    
-    margin-right: 3rem;
-   
-    
-     
-     }
 
-
-     //primeiro botao
-     button{
-    background-color: var(--gray-);
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    border: 0;
-    padding: 1rem 2.5rem;
-    margin-bottom: 2rem;
-    margin-top: -2rem;
-    
-    border-radius: 7px;
-    color: var(--white-);
-    font-weight: bold;
-    transition: 1s;
+    //primeiro botao
+    button {  background-color: #EE63BA;
+        color: white;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      border: 0;
+      padding: 1rem 2.5rem;
+      margin-bottom: 2rem;
+      margin-top: -2rem;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082), 0 2px 5px rgba(0, 0, 0, 0.062);
+      border-radius: 7px;
+      align-items: center;
+      font-weight: bold;
+      transition: 1s;
     }
-    button:hover{
-       background-color: var(--green-);
-       
+    button:hover {
+       background-color: rgb(250, 139, 209);
     }
     
-    .center { //nome GIslene
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2rem;
+    .center {
+      //nome GIslene
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 2rem;
     }
-    
-}
- 
+  }
 }
 
 @media screen and (min-width: 768px) {
-   
-
-
-.buttonGroup { text-decoration: none;
+  .buttonGroup {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -25rem;
   }
-  .buttonContainer { text-decoration: none;
+  .buttonContainer {
+    text-decoration: none;
     margin-bottom: 10rem;
     flex-direction: column;
     display: flex;
@@ -141,26 +133,27 @@ display: flex;
       background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
       box-shadow 500ms linear;
   }
-  
+
   .buttons:hover {
     transform: scale(1.05);
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
-  
+
   .iconButton {
     margin-bottom: 10px;
     display: block;
     align-items: center;
   }
-  
-  .titleButton { text-decoration: none;
+
+  .titleButton {
+    text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
     display: block;
     color: black;
   }
-  
+
   .subtitleButton {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -169,611 +162,517 @@ display: flex;
     margin-top: 1rem;
   }
 
+  .area1 img {
+    margin-right: 2.5rem;
+  }
+  .imgMobile {
+    display: none;
+  }
+}
 
-
-    .area1 img {
-      margin-right: 2.5rem;
-    }
-    .imgMobile {
-        display: none;
-      }
+.area2 {
+  background-color: var(--white-);
+  img {
+    border-radius: 50%;
   }
 
-.area2{
-    background-color: var(--white-);
-    img{border-radius: 50%;}
-   
-    button{
-        background-color: var(--gray-);
-        
-        border: 0;
-        padding: 1rem 2rem;
-        margin-bottom: 2rem;
-        margin-top: 2.5rem;
-        border-radius: 7px;
-        color: var(--white-);
-        font-weight: bold;
-        transition: 1s;
-            display: block;
-                margin: 0 auto;
-                text-align: center;
-                margin-top: 2rem;
-            
-          
-        }
-        button:hover{
-           background-color: var(--green-);
-          
-        }
-        .titledicas { //nome dicas e receitas
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        
-}
+  button {
+    background-color: #EE63BA;
+    color: white;
 
-
-
-.area3{
-   
-    width: 100%;
-    img{
-        padding-right: 4rem;
-        
-        
-    }
-    
-}
-.ebooks{
-    background-color: #FBD7CE;
-    width: 100%;
-
-    .titlebooks { //nome GIslene
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2rem;
-    }
-
- 
-}
-
-
-
-.area4{
-    background-color: var(--white-);
-}
-
-.containerHeader
-    {
-     min-height:calc(100vh - 5rem) ;      
+    border: 0;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    border-radius: 7px;
+    color: var(--white-);
+    font-weight: bold;
+    transition: 1s;
+    display: block;
     margin: 0 auto;
-    max-width: 1120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
 
-img {
+    transition: 1s;
+  }
+  button:hover {
+    background-color: rgb(250, 139, 209);
+  }
+  .titledicas {
+    //nome dicas e receitas
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+.area3 {
+  width: 100%;
+  img {
+    padding-right: 4rem;
+  }
+}
+.ebooks {
+  background-color: #fbd7ce;
+  width: 100%;
+
+  .titlebooks {
+    //nome GIslene
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+.area4 {
+  background-color: var(--white-);
+}
+
+.containerHeader {
+  min-height: calc(100vh - 5rem);
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
     max-width: 640px;
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.212);
-    
-    
-    }
-
-    
-
-    
+  }
 }
-
-
-
 
 @media screen and (min-width: 1000px) {
-    
-    
-    
-    .ctaText {
-        text-align: justify;
-       
-      margin-right: 4.5rem; /* altere o valor conforme necessário */
-    }
+  .ctaText {
+    text-align: justify;
+
+    margin-right: 4.5rem; /* altere o valor conforme necessário */
+  }
+}
+
+.divisor {
+  width: 100%;
+  bottom: 0;
+  height: 1px;
+  border-color: var(--white-);
+}
+
+.sectionContent {
+  text-align: justify;
+  margin: 5.5rem auto;
+  max-width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 640px;
+    padding-left: 6rem;
   }
 
+  section {
+    max-width: 670px;
+  }
 
-.divisor{
-    
-    width: 100%;
-    bottom: 0;
-    height: 1px;
-    border-color: var(--white-);
+  h2 {
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.2rem;
+    color: var(--gray-);
+  }
 
+  span {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+
+    color: var(--gray-);
+    text-align: justify;
+  }
 }
 
+.ebookscontent {
+  max-width: 600px;
 
+  text-align: justify;
+  margin: 5.5rem auto;
+  max-width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.sectionContent{
+  img {
+    max-width: 640px;
+    padding-top: 7rem;
+    border-radius: 10%;
+    padding-bottom: 7rem;
+    max-height: 800px;
+
+    padding-right: 4rem;
+  }
+
+  section {
+    max-width: 670px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.2rem;
+    color: var(--gray-);
+  }
+
+  span {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    color: var(--gray-);
     text-align: justify;
-    margin: 5.5rem auto;
-    max-width: 1120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img{max-width:640px ;
-        padding-left: 6rem;
-       
-    }
-
-    section{
-        max-width: 670px;
-        
-       
-
-    }
-    
-
-    h2{
-        font-size: 2.2rem;
-        line-height:4.5rem ;
-        font-weight:900 ;
-        margin-top: 2.2rem;
-        color: var(--gray-);
-
-    }
-    
-    span{
-        font-size: 1.2rem;
-    line-height:2.25rem ;
-
-        color: var(--gray-);
-        text-align: justify;
-       
-    }
-    
-}
-
-
-.ebookscontent{max-width: 600px;
-    
-    text-align: justify;
-    margin: 5.5rem auto;
-    max-width: 1120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-
-    img{max-width:640px ;
-       padding-top: 7rem;
-        border-radius: 10%;
-        padding-bottom: 7rem;
-       max-height: 800px;
-   
-        padding-right: 4rem;
-        
-        
-    
-
-       
-        
-    }
-
-    section{
-        max-width: 670px;
-        
-       
-
-    }
-    
-
-    h2{
-        font-size: 2.2rem;
-        line-height:4.5rem ;
-        font-weight:900 ;
-        margin-top: 2.2rem;
-        color: var(--gray-);
-
-    }
-    
-    span{
-        font-size: 1.2rem;
-    line-height:2.25rem ;
-        color: var(--gray-);
-        text-align: justify;
-    }
-  .buttonbook{
+  }
+  .buttonbook {
     display: block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2rem;
-    
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    transition: 1s;
   }
 
-
-  button:hover{
-    background-color: var(--green-);
-    
- }
-
+  button:hover {
+    background-color: rgb(250, 139, 209);
+  }
 }
 .gioliveira img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.nextLevelContent {
+  max-width: 1120px;
+  margin: 6rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    color: var(--gray-);
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-}
-.nextLevelContent{
-    
-    max-width: 1120px;
-    margin: 6rem auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-    
 
-    h2{  
-        font-size: 2.8rem;
-        line-height: 4.5rem;
-        font-weight: 900;
-        color: var(--gray-);
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-     
-
-        span{
-            font-size: 2.8rem;
-            line-height: 4.5rem;
-            font-weight: 900;
-            color: var(--gray-100);
-            text-align: justify;
-            
-
-        }
+    span {
+      font-size: 2.8rem;
+      line-height: 4.5rem;
+      font-weight: 900;
+      color: var(--gray-100);
+      text-align: justify;
     }
-   
-    
-    //ultimo botao
-  
-    
-    button{
-        background-color: var(--brown-);
-        border: 0;
-        padding: 1rem 1rem;
-        border-radius: 50%;
-        color:var(--white-) ;
-        font-weight: bold;
+  }
+
+  //ultimo botao
+
+  button {
+    background-color: var(--brown-);
+    border: 0;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    color: var(--white-);
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .imagelinks {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+    a svg {
+      display: inline;
+      margin-top: 15px;
+    }
+
+    svg {
+      color: var(--gray-);
+      cursor: pointer;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+    svg:active {
+      cursor: progress;
+    }
+    svg:hover {
+      color: blue;
+    }
+  }
+}
+
+@media (max-width: 1095px) {
+  .container {
+    .containerHeader {
+      padding: 0 2rem;
+
+      //primeiro botao
+      button {
+        display: block;
+      }
+    }
+    img {
+      max-width: 600px;
+      padding: 0;
+    }
+    div h1 {
+      font-size: 3rem;
+    }
+    div h2 {
+      font-size: 2.3rem;
+      span {
+        font-size: 2.3rem;
+        margin: 0;
+      }
+    }
+
+    .sectionContent,
+    .nextLevelContent {
+      padding: 0 2rem;
+    }
+
+    .area2 {
+      padding: 0 2 rem;
+
+      button {
+        //botao2
+        display: block;
+      }
+
+      img {
+        max-width: 600px;
+        padding: 0;
+      }
+    }
+  }
+  .ebooks {
+    padding: 0 2 rem;
+
+    .ebookscontent {
+      padding: 0 2 rem;
+
+      button {
+        //botao2
+        display: block;
+        margin-left: 6rem;
+      }
+
+      img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 500px;
+        margin-left: 3rem;
+        margin-right: 1rem;
+        padding: 0;
+      }
+
+      span {
+        justify-content: center;
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      .buttonbook {
+        display: block;
         margin: 0 auto;
         text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
     }
-    .imagelinks {
-
-
-
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-     
-        
-        a svg {
-          display: inline;
-          margin-top: 15px;
-        }
-        
-        svg {
-          color: var(--gray-);
-          cursor: pointer;
-          margin-left: 15px;
-          transition: 0.3s;
-        }
-        svg:active {
-            cursor: progress;
-          }
-svg:hover{
-    color: blue;
-}
-
-}
-
-}
-
-@media (max-width: 1095px){
-
-
-
-    
-    .container{
-        .containerHeader{
-            padding: 0 2rem;
-         
-            //primeiro botao
-            button{
-                display: block;
-                
-
-            }
-        }
-        img{
-            max-width: 600px;
-            padding: 0;
-        }
-        div h1{
-          font-size: 3rem;  
-        }
-        div h2{
-         font-size: 2.3rem;
-         span{
-            font-size: 2.3rem;
-            margin: 0;
-         }   
-        }
-
-        .sectionContent, .nextLevelContent{
-            padding: 0 2rem;
-            
-         
-        }
-
-        .area2{
-            padding: 0 2 rem;
-          
-            button{
-            //botao2
-           display: block; 
-          }
-
-          img{
-            max-width: 600px;
-            padding: 0;
-            
-        }
-        }
-       
-    
-    }
-    .ebooks{    padding: 0 2 rem;
-          
-        .ebookscontent{    padding: 0 2 rem;
-          
-            button{
-                //botao2
-               display: block; 
-               margin-left: 6rem;
-              }
-    
-              img{ margin-top: 2rem;
-                margin-bottom: 2rem;
-                max-width: 500px;
-              margin-left: 3rem;
-              margin-right: 1rem;
-                padding: 0;
-                
-            }
-
-            span{
-                justify-content: center;
-                display: inline-block;
-                margin: 0 20px;
-            }
-
-            .buttonbook{
-                display: block;
-                    margin: 0 auto;
-                    text-align: center;
-                    margin-top: 2rem;
-                    margin-bottom:2rem;
-                
-              }
-
-
-        }
-
-    }
-
-    
-
+  }
 }
 
 //janela muito pequena
-@media (max-width: 950px){
-    .container{ 
-        background-color: #FBD7CE;
-        .divsobremimTitle{background-color: #FBD7CE;
-            align-items: center;
-            display: flex;
-            width: 100%;
-            .sobremimTitle{  box-shadow: none;
-                width:100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                margin-top: 0;
-              margin-left:  auto;
-              margin-right: auto;   
-                   margin-bottom: -1rem;
-              }
-             
-         }
-       
-         .divsobremimWeb{
-            display: none;
-           
-          }
-        .homegislene{display: none;}
-        
-        .containerHeader{margin-top: -2rem;
-            flex-direction: column;
-             .ctaText{  margin-bottom: -6rem;
-        
-               
-        
-            h1{
-              display: none;
-            }}
-         
-            
-            button{
-                width: 100%;
-                display: flex ;
-                justify-content: center;
-                align-items: center;
-               
-            }
-        }
-
-
-  .buttonGroup {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  .buttonContainer { margin-left: 2rem;
-    border: none;
-    margin-top: -26rem;
-    margin-bottom: 4rem;
-  }
-
-  .buttons {
-    background-color: transparent;
-    border: none;
-    margin: 0 10px;
-   
-    box-shadow: none;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 12px;
-  }
-
-  .iconButton {
-    margin-bottom: 2px;
-    display: block;
-    align-items: center;
-  }
-
-  .titleButton {color: black;
-   text-decoration: none;
-    font-size: 0.8rem;
-
-  
-  }
-
-  .subtitleButton {
-    display: none;
-  }
-       
-        div img{margin-top: 2rem;
-             margin-left:  auto;
-             width: 100%;;
-            border-radius: 0;
-        }
-        .imgMobile {
-            display: flex;
-            margin: 0 auto;
-            background-color: white;
-            align-items: center;
-            justify-content: center;
-          }
-        div h1{
-            font-size: 3rem ;
-         }
-    
-         h2{
-            font-size: 1rem;
-         }
-         .sectionContent{
-            flex-direction: column;
-       
-            margin-bottom: -4rem;
-         }
-
-       
-         //botao 2 e img 2 tela pequena
-         .area2{ 
-                button{
-                    width: 100%;
-                    display: flex ;
-                    justify-content: center;
-                    align-items: center;
-                    
-                }
-                img{ 
-                    margin-top: 2rem;
-                    max-width: 400px;
-                   
-                }
-            }
+@media (max-width: 950px) {
+  .container {
+    background-color: #fbd7ce;
+    .divsobremimTitle {
+      background-color: #fbd7ce;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      .sobremimTitle {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -1rem;
+      }
     }
 
-    .ebooks{  
-        .ebookscontent{  
-            flex-direction: column;
-            margin-bottom: -6rem;
-          
-            img{ 
-                margin-top: 2rem;
-                max-width: 300px;
-                align-items: center;
-                margin-right: 2.5rem;
-               
-               
-            }
-          
-          
-
-            h2{ margin-top: -0.5rem;
-                font-size: 2,5rem ;
-                margin: 0 auto;
-                
-               
-                
-
-            }
-
-            span{ 
-                
-                  
-              justify-content: center;
-              display: inline-block;
-              margin: 0 20px;
-             
-            }
-
-            button{
-              max-width: 90%;
-            
-              justify-content: center;
-              align-items: center;
-              
-              display: inline-block;
-              margin:  20px;
-
-             
-            }
-        }
-
+    .divsobremimWeb {
+      display: none;
+    }
+    .homegislene {
+      display: none;
     }
 
-    .area4 { 
-        h2 {   font-size: 2rem;
-            text-align: center;
-            margin: 0 auto;
-          
-        }
-       
+    .containerHeader {
+      margin-top: -2rem;
+      flex-direction: column;
+      .ctaText {
+        margin-bottom: -6rem;
+        margin-left: 0;
 
-        button{
-            display: none;
+        h1 {
+          display: none;
         }
+      }
+
+      button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
+
+    .buttonGroup {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttonContainer {
+      margin-left: 2rem;
+      border: none;
+      margin-top: -26rem;
+      margin-bottom: 4rem;
+    }
+
+    .buttons {
+      background-color: transparent;
+      border: none;
+      margin: 0 10px;
+
+      box-shadow: none;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 12px;
+    }
+
+    .iconButton {
+      margin-bottom: 2px;
+      display: block;
+      align-items: center;
+    }
+
+    .titleButton {
+      color: black;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .subtitleButton {
+      display: none;
+    }
+
+    div img {
+      margin-top: 2rem;
+      margin-left: auto;
+      width: 100%;
+      border-radius: 0;
+    }
+    .imgMobile {
+      display: flex;
+      margin: 0 auto;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+    }
+    div h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+    .sectionContent {
+      flex-direction: column;
+
+      margin-bottom: -4rem;
+    }
+
+    //botao 2 e img 2 tela pequena
+    .area2 {
+      button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 2rem;
+        max-width: 400px;
+      }
+    }
+  }
+
+  .ebooks {
+    .ebookscontent {
+      flex-direction: column;
+      margin-bottom: -6rem;
+
+      img {
+        margin-top: 2rem;
+        max-width: 300px;
+        align-items: center;
+        margin-right: 2.5rem;
+      }
+
+      h2 {
+        margin-top: -0.5rem;
+        font-size: 2, 5rem;
+        margin: 0 auto;
+      }
+
+      span {
+        justify-content: center;
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      button {
+        max-width: 90%;
+
+        justify-content: center;
+        align-items: center;
+
+        display: inline-block;
+        margin: 20px;
+      }
+    }
+  }
+
+  .area4 {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    button {
+      display: none;
+    }
+  }
 }
-

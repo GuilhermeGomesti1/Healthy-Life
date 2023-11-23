@@ -5,7 +5,7 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import dicaserec from "../../../public/images/dicaserec.png"
+import dicas from "../../../public/images/dicas.png"
 import { getPrismicClient } from "../../services/prismic";
 import Prismic from "@prismicio/client";
 import { RichText } from "prismic-dom";
@@ -95,11 +95,11 @@ export default function Posts({
       </Head>
       <div>
             <Image
-                className={styles.dicaserec}
-                src={dicaserec}
+                className={styles.dicas}
+                src={dicas}
                 alt="foto home mobile"
-                width={390}
-                height={658}
+                width={530}
+                height={325}
                 loading="lazy"
                 placeholder="blur"
               />

@@ -92,7 +92,7 @@ export default function Home({ content }: ContentProps) {
 
              
 
-              <Link href={"/"} className={styles.buttonContainer}>
+              <Link href={"/posts"} className={styles.buttonContainer}>
                 <button className={styles.buttons}>
                   <span className={styles.iconButton}>
                     <IconDicas/>
@@ -160,7 +160,7 @@ export default function Home({ content }: ContentProps) {
               <ActiveLink legacyBehavior href="/sobre" activeClassName="sobre">
                 <a href="/sobre">
                   <br />
-                  <button>Saiba mais</button>
+                  <button> Saiba mais</button>
                 </a>
               </ActiveLink>
             </section>

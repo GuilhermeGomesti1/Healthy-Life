@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
-
+import ebookst from "../../../public/images/ebooks.png"
 import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -88,6 +88,17 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
             <Head>
                 <title> Gislene Oliveira | E-books</title>
             </Head>
+            <div>
+            <Image
+                className={styles.ebooks}
+                src={ebookst}
+                alt="foto home mobile"
+                width={490}
+                height={272}
+                loading="lazy"
+                placeholder="blur"
+              />
+            </div>
             <div className={styles.containerPost}>   <main className={styles.container}>
                 <div className={styles.posts}>
                     {ebooks.map(ebook => (<Link key={ebook.slug} legacyBehavior href={`/ebooks/${ebook.slug}`}>

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap");
 
 .containerPost {
-  background-image: linear-gradient(to right, #e3b198, #fbd7ce, #fff);
+background-color: white;
 }
 
 .container {
@@ -12,8 +12,9 @@
   padding: 0 2rem;
 }
 
-.dicaserec {
-  display: none;
+.dicas{  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto; 
+  margin-bottom: -4rem;
 }
 .posts {
   max-width: 720px;
@@ -119,7 +120,14 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
+
+
+.dicas{  width: 330px;
+  height: 203px;
+  margin-top: 1rem;
+  margin-bottom: -4rem;
+}
   .posts a {
     text-align: center;
     img {

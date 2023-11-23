@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap");
 
 .containerPost {
-  background-color: #fbd7ce;
+  background-color: white;
 }
 
 .container {
@@ -12,7 +12,11 @@
   padding: 0 2rem;
   
 }
-
+.ebooks{  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto; 
+  margin-top: 2rem;
+  
+}
 .posts {
   padding-top: 2rem;
 
@@ -173,7 +177,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .posts {
     padding-top: 2rem;
    
@@ -191,7 +195,13 @@
       margin-bottom: 1rem;
      
     }
-    
+ 
+  }
+   
+  .ebooks{  width: 320px;
+    height: 177px;
+    margin-top: 2rem;
+   
   }
   .textbook {
    
