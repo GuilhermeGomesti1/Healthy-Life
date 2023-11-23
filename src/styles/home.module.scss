@@ -1,4 +1,5 @@
 .container {
+  background-color: #fbd7ce;
   display: block;
   .divsobremimTitle {
     display: none;
@@ -7,18 +8,19 @@
     width: 100%;
     align-items: center;
     display: flex;
-    background-color: #fbd7ce;
+
     .sobremimWeb {
       margin-left: auto;
       margin-right: auto;
       margin-top: 4rem;
-      margin-bottom: -4rem;
+      margin-bottom: -1rem;
     }
   }
+  .area2{padding-top: 1rem;}
 }
 
 .area1 {
-  padding-top: 2rem;
+  
   padding-bottom: 2rem;
   background-color: #fbd7ce;
   width: 100%;
@@ -26,6 +28,7 @@
   display: flex;
 
   img {
+    background-color: #fbd7ce;
     flex: 0 0 auto;
     margin-right: 10rem; /* Ajuste o espaçamento entre a imagem e o conteúdo */
     border-radius: 3%;
@@ -35,17 +38,20 @@
   }
 
   .containerHeader {
+    
     width: 100%;
     display: flex;
     align-items: center;
   }
 
   .ctaText {
+   
     width: 100%;
     text-align: justify;
     margin-left: 4rem;
 
     h1 {
+    
       font-size: 3rem;
       line-height: 4.5rem;
       font-weight: 900;
@@ -53,6 +59,7 @@
       color: var(--gray-);
     }
     h2 {
+     
       font-size: 2rem;
       line-height: 4.5rem;
       font-weight: 900;
@@ -60,6 +67,7 @@
       color: var(--gray-);
     }
     span {
+     
       font-size: 1.2rem;
       line-height: 2.25rem;
       color: var(--gray-);
@@ -69,8 +77,9 @@
     }
 
     //primeiro botao
-    button {  background-color: #EE63BA;
-        color: white;
+    button {
+      background-color: #ee63ba;
+      color: white;
       display: block;
       margin: 0 auto;
       text-align: center;
@@ -85,9 +94,9 @@
       transition: 1s;
     }
     button:hover {
-       background-color: rgb(250, 139, 209);
+      background-color: rgb(250, 139, 209);
     }
-    
+
     .center {
       //nome GIslene
       display: block;
@@ -95,7 +104,9 @@
       text-align: center;
       margin-top: 2rem;
     }
+   
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -170,14 +181,14 @@
   }
 }
 
-.area2 {
+.area2 { 
   background-color: var(--white-);
   img {
     border-radius: 50%;
   }
 
   button {
-    background-color: #EE63BA;
+    background-color: #ee63ba;
     color: white;
 
     border: 0;
@@ -207,7 +218,7 @@
   }
 }
 
-.area3 {
+.area3 { 
   width: 100%;
   img {
     padding-right: 4rem;
@@ -499,9 +510,13 @@
 //janela muito pequena
 @media (max-width: 950px) {
   .container {
-    background-color: #fbd7ce;
+  
     .divsobremimTitle {
-      background-color: #fbd7ce;
+
+      
+
+
+     
       align-items: center;
       display: flex;
       width: 100%;
@@ -514,7 +529,7 @@
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: -1rem;
+        margin-bottom: 0.8rem;
       }
     }
 
@@ -529,7 +544,7 @@
       margin-top: -2rem;
       flex-direction: column;
       .ctaText {
-        margin-bottom: -6rem;
+        margin-bottom: -7rem;
         margin-left: 0;
 
         h1 {
@@ -614,7 +629,7 @@
     }
 
     //botao 2 e img 2 tela pequena
-    .area2 {
+    .area2 { padding-top: 0;
       button {
         width: 100%;
         display: flex;

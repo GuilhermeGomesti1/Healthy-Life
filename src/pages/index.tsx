@@ -23,6 +23,7 @@ import sobremim from "../../public/images/sobremim.png";
 import sobremimWeb from "../../public/images/sobremimWeb.png";
 
 import Link from "next/link";
+import { useEffect } from "react";
 type Content = {
   title: string;
   titleContent: string;
@@ -45,6 +46,28 @@ interface ContentProps {
   content: Content;
 }
 export default function Home({ content }: ContentProps) {
+
+  useEffect(() => {
+
+    if (typeof window !== 'undefined') {
+      // O código abaixo será executado apenas no navegador
+      import('scrollreveal').then((ScrollRevealModule) => {
+        const ScrollReveal = ScrollRevealModule.default || ScrollRevealModule;
+
+        const sr = ScrollReveal({
+          duration: 1000,
+          reset: false,
+          // Outras opções de configuração aqui
+        });
+
+        sr.reveal('.animated-item', {
+          origin: 'bottom',
+          distance: '20px',
+          easing: 'ease-in-out',
+        });
+      });
+    }
+  }, []);
   //console.log(content)
   return (
     <>
@@ -119,9 +142,9 @@ export default function Home({ content }: ContentProps) {
 
         </div>
 
-        <div className={styles.divsobremimTitle}>
+        <div  className={`${styles.divsobremimTitle} animated-item`}>  
             <Image
-              className={styles.sobremimTitle}
+             className={`${styles.sobremimTitle} animated-item`}
               src={sobremim}
               alt="Sobre mim titulo"
               width={390}
@@ -131,9 +154,9 @@ export default function Home({ content }: ContentProps) {
             />
           </div>
 
-          <div className={styles.divsobremimWeb}>
+          <div  className={`${styles.divsobremimWeb} animated-item`}> 
             <Image
-              className={styles.sobremimWeb}
+              className={`${styles.sobremimWeb} animated-item`}
               src={sobremimWeb}
               alt="Sobre mim titulo"
               width={650}
@@ -143,16 +166,16 @@ export default function Home({ content }: ContentProps) {
             />
           </div>
 
-        <div className={styles.area1}>
+        <div  className={`${styles.area1} animated-item`}>   
        
-          <div className={styles.containerHeader}>
+          <div className={`${styles.containerHeader} animated-item`}> 
 
          
         
             <img src={content.imagetop} alt="Conteúdos" />
 
-            <section className={styles.ctaText}>
-              <h1 className={styles.center}>{content.title}</h1>
+            <section  className={`${styles.ctaText} animated-item`}> 
+              <h1 className={`${styles.center} animated-item`}>  {content.title}</h1>   
               <br />
               <span> {content.titleContent} </span>
 
@@ -167,10 +190,10 @@ export default function Home({ content }: ContentProps) {
           </div>
         </div>
 
-        <div className={styles.area2}>
-          <div className={styles.sectionContent}>
+        <div className={`${styles.area2} animated-item`}>    
+          <div className={`${styles.sectionContent} animated-item`}>   
             <section>
-              <h2 className={styles.titledicas}>{content.bloco2title}</h2>
+              <h2 className={`${styles.titledicas} animated-item`}>  {content.bloco2title}</h2>  
               <span>{content.bloco2content}</span> <br></br>
               <ActiveLink legacyBehavior href="/posts" activeClassName="posts">
                 <a href="/posts">
@@ -186,12 +209,12 @@ export default function Home({ content }: ContentProps) {
             </ActiveLink>
           </div>
 
-          <div className={styles.ebooks}>
-            <div className={styles.ebookscontent}>
-              <img src={content.bloco3banner} alt="Conteudo " />
+          <div  className={`${styles.ebooks} animated-item`}>   
+            <div className={`${styles.ebookscontent} animated-item`}>   
+              <img src={content.bloco3banner} alt="Conteudo " />  
 
               <section>
-                <h2 className={styles.titlebooks}>{content.bloco3}</h2>
+                <h2 className={`${styles.titlebooks} animated-item`}> {content.bloco3}</h2>   
                 <span>{content.bloco3content}</span>
 
                 <ActiveLink
@@ -200,7 +223,7 @@ export default function Home({ content }: ContentProps) {
                   activeClassName="ebooks"
                 >
                   <a href="/ebooks">
-                    <button className={styles.buttonbook}>
+                    <button className={`${styles.buttonbook} animated-item`}>   
                       Garanta já o seu!
                     </button>
                   </a>
@@ -210,14 +233,14 @@ export default function Home({ content }: ContentProps) {
           </div>
         </div>
 
-        <div className={styles.area4}>
-          <div className={styles.nextLevelContent}>
+        <div className={`${styles.area4} animated-item`}> 
+          <div className={`${styles.nextLevelContent} animated-item`}>  
             <h2>
               "Honre sua <span className="styles.alunos"> saúde </span> com uma
               nutrição gentil."{" "}
             </h2>
 
-            <div className={styles.imagelinks}>
+            <div className={`${styles.imagelinks} animated-item`}>  
               <a
                 href="https://www.youtube.com/@nutravia_terra8284"
                 target="_blank"

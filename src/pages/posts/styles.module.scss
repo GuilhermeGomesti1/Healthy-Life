@@ -60,7 +60,7 @@ background-color: white;
       font-size: 1.5rem;
       margin: 1rem 0;
       line-height: 2rem;
-      color: var(--gray-);
+      color:#EE63BA;
       transition: color 0.3s;
       align-items: center;
     }
@@ -68,14 +68,14 @@ background-color: white;
     p {
       font-size: 1.2rem;
       line-height: 2.25rem;
-      color: var(--gray-);
+      
       text-align: justify;
       font-family: "Allura", cursive;
       font-family: "Catamaran", sans-serif;
       font-family: "DM Serif Display", serif;
       font-family: "Open Sans", sans-serif;
       font-family: "Roboto", sans-serif;
-      color: var(--gray-);
+    
       margin-top: 0.5rem;
       line-height: 1.62;
       display: flex;
@@ -84,7 +84,7 @@ background-color: white;
     }
 
     &:hover strong {
-      color: #7a6964;
+     
     }
   }
 }
@@ -95,20 +95,20 @@ background-color: white;
 .buttonNavigate {
   margin-top: 2rem;
   display: flex;
-  align-items: center;
+
   flex-direction: row;
   justify-content: space-between;
 
   div {
     display: flex;
-    flex-direction: row;
+   margin-left: auto;
   }
 
-  button {
-    margin: 0 5px;
+  button {margin-top: 2rem;
+    margin-right: 0.5rem;
     border: 0;
-    background-color: var(--brown-);
-    color: var(--white-);
+    background-color: #EE63BA;
+   justify-content: center;
     display: flex;
     padding: 0.5rem;
     border-radius: 5px;
@@ -128,12 +128,26 @@ background-color: white;
   margin-top: 1rem;
   margin-bottom: -4rem;
 }
-  .posts a {
+  .posts a { margin-bottom: -2rem;
     text-align: center;
     img {
       margin: 0 auto;
-      max-width: 290px;
-      max-height: 200px;
+      width: 350px;
+      height: 235px;
+    }
+    strong{font-size: 1.3rem;
+      margin-top: 6px;
+    }
+
+    time {
+      margin-top: -1.2rem;
+      font-size: 0.8rem;
+     
+    }
+    p{
+      color: red;
+      font-size: 0.7rem;
+      margin-top: -1px;
     }
   }
   .dicaserec {
