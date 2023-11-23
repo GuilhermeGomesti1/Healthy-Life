@@ -218,16 +218,16 @@
   }
 }
 
-.area3 { 
+.area3 {  
   width: 100%;
   img {
     padding-right: 4rem;
   }
 }
-.ebooks {
+.ebooks {  max-height: 750px;
   background-color: #fbd7ce;
   width: 100%;
-
+  
   .titlebooks {
     //nome GIslene
     display: block;
@@ -237,7 +237,7 @@
   }
 }
 
-.area4 {
+.area4 { margin-top: -6rem;
   background-color: var(--white-);
 }
 
@@ -469,7 +469,7 @@
       }
     }
   }
-  .ebooks {
+  .ebooks { 
     padding: 0 2 rem;
 
     .ebookscontent {
@@ -679,7 +679,7 @@
     }
   }
 
-  .area4 {
+  .area4 { margin-top: 0;
     h2 {
       font-size: 2rem;
       text-align: center;
