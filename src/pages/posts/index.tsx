@@ -156,11 +156,11 @@ export default function Posts({
             <div  className={styles.buttonNavigate}>  
               {Number(currentPage) >= 2 && (
                 <div>
-                  <button onClick={() => navigatePage(1)}>
+                  <button title="Voltar Tudo" onClick={() => navigatePage(1)}>
                     <FiChevronsLeft size={25} color="#fff" />
                   </button>
 
-                  <button onClick={() => navigatePage(Number(currentPage - 1))}>
+                  <button title="Voltar" onClick={() => navigatePage(Number(currentPage - 1))}>
                     <FiChevronLeft size={25} color="#fff" />
                   </button>
                 </div>
@@ -168,11 +168,11 @@ export default function Posts({
 
               {Number(currentPage) < Number(totalPage) && (
                 <div>
-                  <button onClick={() => navigatePage(Number(currentPage + 1))}>
+                  <button title=" Próxima" onClick={() => navigatePage(Number(currentPage + 1))}>
                     <FiChevronRight size={25} color="#fff" />
                   </button>
 
-                  <button onClick={() => navigatePage(Number(totalPage))}>
+                  <button title="Última" onClick={() => navigatePage(Number(totalPage))}>
                     <FiChevronsRight size={25} color="#fff" />
                   </button>
                 </div>

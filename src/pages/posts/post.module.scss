@@ -11,25 +11,29 @@
     padding: 0 2rem;
     padding-bottom: 5rem;
     border-radius: 5px;
-    box-shadow: 3px 3px  #54545417, -0.2em 0 0.4em rgba(49, 49, 48, 0.144);
+   
 }
 
+.dicas {
+    display: block;
+    margin: 0 auto;
+  }
 .post{
-    
-    max-width: 720px;
-    margin: 0rem auto 0;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
 img{
-    padding-top: 5rem;
-    max-width: 100%;
-    max-height: 410px;
-    border-radius: 15px;
+  
+  
 }
 
-h1{
+h1{ margin-top: 1.5rem;
     font-size: 2rem;
     font-weight: 900;
-    color: var(--gray-);
+    color: #ee63ba;
+    margin-bottom: -1.5rem;
     
 }
 time{
@@ -64,7 +68,7 @@ time{
         padding-left:1.5rem ;
         
         li{
-             margin: 1.5rem 0;}
+             margin: 0;}
     }
     a:hover{
         color: var(--green-);
@@ -79,14 +83,18 @@ time{
 }
 
 
-.voltar{  background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff,); text-align: center; 
-    a{  padding-bottom: 5rem;
-        color: var(--gray-100);
-        display: inline-block;
-        margin: 0 auto;
-        transition: 1s;
-        
-        text-align: center;
+.voltar{    text-align: center; 
+    a{  background-color: #ee63ba;  padding-bottom: 5rem;
+        margin-top: -4rem;
+    margin-right: 0.5rem;
+    border: 0;
+    color: white;
+    justify-content: flex-end;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    justify-content: flex-end;
     }
 
     a:hover{
@@ -94,14 +102,32 @@ time{
     }
 
 }
+@media (max-width: 950px){ 
+    .dicas {
+        width: 315px;
+        height: 193px;
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+      }
+   
+.post{
+    h1{margin-top: 8px;
+        font-size: 1.3rem;
+        
+    }
+    time {
+     margin-bottom: -1rem;
+        font-size: 0.8rem;
+      }
+     
+img{
+    display: block;
+    margin: 0;
+    width: 350px;
+    height: 235px;
+  
+}
 
-//@media (max-width: 1095px){
-    //.post {
-        //    img{
-        // margin: 0 auto;
-       // max-width: 300px;
+}
 
-   // }
-   // }
-//}
-
+}
