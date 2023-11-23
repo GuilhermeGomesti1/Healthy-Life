@@ -349,7 +349,9 @@
     margin-top: 2rem;
     transition: 1s;
   }
-
+  button{
+  
+  }
   button:hover {
     background-color: rgb(250, 139, 209);
   }
@@ -643,8 +645,8 @@
     }
   }
 
-  .ebooks {
-    .ebookscontent {
+  .ebooks { 
+    .ebookscontent { 
       flex-direction: column;
       margin-bottom: -6rem;
 
@@ -669,12 +671,12 @@
 
       button {
         max-width: 90%;
-
+margin-bottom: 4rem;
         justify-content: center;
         align-items: center;
 
-        display: inline-block;
-        margin: 20px;
+       
+        
       }
     }
   }
@@ -685,9 +687,10 @@
       text-align: center;
       margin: 0 auto;
     }
+    
 
     button {
-      display: none;
+   
     }
   }
 }
