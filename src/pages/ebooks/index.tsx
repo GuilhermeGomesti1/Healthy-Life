@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ebookst from "../../../public/images/ebooks.png"
 import styles from './styles.module.scss';
 import Link from 'next/link';
@@ -82,6 +82,27 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
         setCurrentPage(pageNumber)
         setEbooks(getEbooks);
     }
+    useEffect(() => {
+
+        if (typeof window !== 'undefined') {
+          // O código abaixo será executado apenas no navegador
+          import('scrollreveal').then((ScrollRevealModule) => {
+            const ScrollReveal = ScrollRevealModule.default || ScrollRevealModule;
+    
+            const sr = ScrollReveal({
+              duration: 1000,
+              reset: false,
+              // Outras opções de configuração aqui
+            });
+    
+            sr.reveal('.animated-item', {
+              origin: 'bottom',
+              distance: '20px',
+              easing: 'ease-in-out',
+            });
+          });
+        }
+      }, []);
 
     return (
         <>
@@ -90,7 +111,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
             </Head>
             <div>
             <Image
-                className={styles.ebooks}
+               className={`${styles.ebooks} animated-item`}
                 src={ebookst}
                 alt="foto home mobile"
                 width={490}
@@ -107,7 +128,7 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                     <div className={styles.divbook}>
                         <a key={ebook.slug}>
 
-                            <div className={styles.imgbook}>
+                            <div className={`${styles.imgbook} animated-item`}>
                                 <Image src={ebook.coverbook} alt={ebook.titlebook}
                                     width={720}
                                     height={410}
@@ -116,9 +137,9 @@ export default function Ebooks({ ebooks: ebooksBlog, page, totalPage }: EbooksPr
                                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPceQ4AAkYBiUQ8i/IAAAAASUVORK5CYII="
                                 />
                             </div>
-                            <div className={styles.textbook}> <strong>{ebook.titlebook}</strong>
+                            <div   className={`${styles.textbook} animated-item`}>  <strong>{ebook.titlebook}</strong>      
                                 
-                                <p> <strong className={styles.cliqueesaibamais}> Clique e saiba mais! </strong>
+                                <p> <strong  className={`${styles.cliqueesaibamais} animated-item`}> CLIQUE E SAIBA MAIS </strong>  
                                 </p>
                                 <time>{ebook.updatedAt}</time>
                             

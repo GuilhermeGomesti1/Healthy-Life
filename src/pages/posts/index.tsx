@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 import Link from "next/link";
@@ -33,6 +33,8 @@ interface PostsProps {
 }
 
 export default function Posts({
+
+  
   posts: postsBlog,
   page,
   totalPage,
@@ -88,6 +90,29 @@ export default function Posts({
     setPosts(getPosts);
   }
 
+
+  useEffect(() => {
+
+    if (typeof window !== 'undefined') {
+      // O código abaixo será executado apenas no navegador
+      import('scrollreveal').then((ScrollRevealModule) => {
+        const ScrollReveal = ScrollRevealModule.default || ScrollRevealModule;
+
+        const sr = ScrollReveal({
+          duration: 1000,
+          reset: false,
+          // Outras opções de configuração aqui
+        });
+
+        sr.reveal('.animated-item', {
+          origin: 'bottom',
+          distance: '20px',
+          easing: 'ease-in-out',
+        });
+      });
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -95,7 +120,7 @@ export default function Posts({
       </Head>
       <div>
             <Image
-                className={styles.dicas}
+              className={`${styles.dicas} animated-item`}
                 src={dicas}
                 alt="foto home mobile"
                 width={530}
@@ -104,13 +129,13 @@ export default function Posts({
                 placeholder="blur"
               />
             </div>
-      <div className={styles.containerPost}>
+      <div className={styles.containerPost}>    
         <main className={styles.container}>
-          <div className={styles.posts}>
+          <div  className={styles.posts}>   
             {posts.map((post) => (
               <Link key={post.slug} legacyBehavior href={`/posts/${post.slug}`}>
                 <a key={post.slug}>
-                  <Image
+                  <Image className=" animated-item"
                     src={post.cover}
                     alt={post.title}
                     width={720}
@@ -120,13 +145,13 @@ export default function Posts({
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPceQ4AAkYBiUQ8i/IAAAAASUVORK5CYII="
                   />
 
-                  <strong>{post.title}</strong>
-                  <time>{post.updatedAt}</time>
-                  <p>{post.description}</p>
+                  <strong className=" animated-item">{post.title}</strong>
+                  <time className=" animated-item">{post.updatedAt}</time>
+                  <p className=" animated-item">{post.description}</p>
                 </a>
               </Link>
             ))}
-            <div className={styles.buttonNavigate}>
+            <div  className={`${styles.buttonNavigate} animated-item`}>  
               {Number(currentPage) >= 2 && (
                 <div>
                   <button onClick={() => navigatePage(1)}>
