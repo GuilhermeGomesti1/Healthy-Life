@@ -20,7 +20,7 @@ Foi implementado um Sistema de Gestão de Conteúdo para permitir que o cliente 
 O site foi entregue com sucesso ao cliente e está em pleno funcionamento. 
 
 ## Layout mobile
-![Mobile 1] ![Mobile 2](https://github.com/GuilhermeGomesti1/next-system/blob/main/public/images/mobilehome2.jpeg)
+![Mobile 1](https://github.com/GuilhermeGomesti1/next-system/blob/main/public/images/mobilehome.jpeg) ![Mobile 2](https://github.com/GuilhermeGomesti1/next-system/blob/main/public/images/mobilehome2.jpeg)
 
 ## Layout web
 ![Web 1](public/images/homeweb.png)
