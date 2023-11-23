@@ -2,37 +2,43 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap");
 
-.containerPost {
+.containerPost { margin: 0;
 background-color: white;
 }
 
 .container {
-  max-width: 1120px;
+
   margin: 0 auto;
   padding: 0 2rem;
+  
 }
 
-.dicas{  display: block; /* Garante que a imagem se comporte como um bloco */
+.dicas{  display: block;
   margin: 0 auto; 
-  margin-bottom: -4rem;
+  
 }
-.posts {
-  max-width: 720px;
-  margin: auto;
-  padding-top: 5rem;
+.posts { max-width: 1600px;
+align-items: center;
+margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
 
-  a {
+  
+
+  a {  width: calc(33.33% - 20px); /* Defina a largura dos posts */
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     & + a {
-      margin-top: 2rem;
-      padding-top: 2rem;
+    
     }
 
-    time {
+    time {margin-top: -0.7rem;
       font-size: 1rem;
       display: flex;
       align-items: center;
@@ -40,9 +46,9 @@ background-color: white;
     }
 
     img {
-      max-width: 100%;
-      max-height: 410px;
-      border: 2px solid var(--white-);
+      
+margin-top: 4rem;
+      
       border-radius: 6px;
       border-image: linear-gradiente(95deg, #fbd7ce, transparent) 1;
     }
@@ -58,7 +64,7 @@ background-color: white;
       font-family: "Roboto", sans-serif;
       display: block;
       font-size: 1.5rem;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       line-height: 2rem;
       color:#EE63BA;
       transition: color 0.3s;
@@ -66,9 +72,9 @@ background-color: white;
     }
 
     p {font-weight: bolder;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       line-height: 2.25rem;
-      
+      color: red;
       text-align: justify;
       font-family: "Allura", cursive;
       font-family: "Catamaran", sans-serif;
@@ -76,7 +82,7 @@ background-color: white;
       font-family: "Open Sans", sans-serif;
       font-family: "Roboto", sans-serif;
     
-      margin-top: 0.5rem;
+      
       line-height: 1.62;
       display: flex;
       align-items: center;
@@ -92,28 +98,27 @@ background-color: white;
   cursor: progress;
 }
 
-.buttonNavigate {
+.buttonNavigate {display: flex;  justify-content: flex-end; 
   margin-top: 2rem;
-  display: flex;
-
-  flex-direction: row;
+  align-self: flex-end;
   justify-content: space-between;
+  margin: 0 auto;
 
-  div {
+  div { justify-content: flex-end; 
     display: flex;
-   margin-left: auto;
+   margin-left:0 auto;
   }
 
-  button {margin-top: 2rem;
+  button {margin-top: 4rem;
     margin-right: 0.5rem;
     border: 0;
     background-color: #EE63BA;
-   justify-content: center;
+   justify-content: flex-end;
     display: flex;
     padding: 0.5rem;
     border-radius: 5px;
     margin-bottom: 3rem;
-
+    justify-content: flex-end; 
     svg {
       padding: 0 3px;
     }
@@ -127,16 +132,24 @@ background-color: white;
   height: 193px;
   margin-top: 1rem;
   margin-bottom: -4rem;
+  
 }
-  .posts a { margin-bottom: -2rem;
+  .posts a { align-items: center;
+    
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: -2rem;
+    margin-top: 4rem;
     text-align: center;
-    img {
-      margin: 0 auto;
+    
+    img {display: block;
+      margin: 0 ;
       width: 350px;
       height: 235px;
     }
     strong{font-size: 1.3rem;
       margin-top: 6px;
+      margin-bottom: 1rem;
     }
 
     time {

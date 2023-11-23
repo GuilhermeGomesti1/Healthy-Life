@@ -131,15 +131,17 @@ export default function Posts({
             </div>
       <div className={styles.containerPost}>    
         <main className={styles.container}>
+          
           <div  className={styles.posts}>   
+
             {posts.map((post) => (
               <Link key={post.slug} legacyBehavior href={`/posts/${post.slug}`}>
                 <a key={post.slug}>
                   <Image className=" animated-item"
                     src={post.cover}
                     alt={post.title}
-                    width={720}
-                    height={410}
+                    width={420}
+                    height={282}
                     quality={100}
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPceQ4AAkYBiUQ8i/IAAAAASUVORK5CYII="
