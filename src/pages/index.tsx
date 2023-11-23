@@ -80,7 +80,7 @@ export default function Home({ content }: ContentProps) {
           <Image
             className={styles.homegislene}
             src={homegislene}
-            alt="foto dos alunos"
+            alt="foto home"
             width={1833}
             height={911}
             loading="lazy"

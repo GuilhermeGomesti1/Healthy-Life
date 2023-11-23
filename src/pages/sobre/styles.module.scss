@@ -8,9 +8,23 @@
 .container{
     display: block;
 }
+.divsobremimTitle {
+  display: none;
+}
+.divsobremimWeb {
+  width: 100%;
+  align-items: center;
+  display: flex;
 
+  .sobremimWeb {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+  }
+}
 .sobremim{
-  background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+ background-color: #FBD7CE;
 }
 .containerHeader{ 
     min-height: calc(100vh - 6rem);
@@ -23,7 +37,7 @@
 
     img{
         max-width: 490px;
-        border-radius: 3%;
+      
         box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.212);
         
        
@@ -163,3 +177,29 @@ svg:hover{
   
    
   }
+
+  @media (max-width: 950px) {
+  .divsobremimTitle {
+margin-bottom: -2rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    .sobremimTitle {
+      box-shadow: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .divsobremimWeb {
+    display: none;
+  }
+  .homegislene {
+    display: none;
+  }}
