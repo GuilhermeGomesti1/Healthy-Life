@@ -88,7 +88,7 @@ export default function Sobre({content}  : ContentProps){
                 
                 <h2>{content.title2}</h2>
                 <p>{content.text2about}</p>
-        <div className={`${styles.icones} animated-item`}>      <a href={content.youtube} target="_blank">
+        <div className={styles.icones}>      <a href={content.youtube} target="_blank">
                     <FaYoutube size={40}/>
 
                 </a>
