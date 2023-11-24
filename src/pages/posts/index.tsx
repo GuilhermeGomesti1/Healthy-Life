@@ -165,8 +165,8 @@ export default function Posts({
                     <FiChevronsLeft size={25} color="#fff" />
               </button>   */}
 
-                  <button title="Voltar" onClick={() => navigatePage(Number(currentPage - 1))}>
-                    <FaArrowLeft size={40} color="#fff" />
+                  <button className={styles.bvoltar} title="Voltar" onClick={() => navigatePage(Number(currentPage - 1))}>
+                    <FaArrowLeft size={40} color="#fff"  />
                   </button>
                 </div>
               )}
