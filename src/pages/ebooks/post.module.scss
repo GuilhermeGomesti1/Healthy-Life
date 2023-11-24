@@ -1,8 +1,13 @@
 
 .allpage{
     padding-top: 0.5rem;
-    background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff, );
+  background-color: white;
 }
+.ebooks{  display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; 
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+  }
 
 .container{
     max-width: 1120px;
@@ -42,8 +47,9 @@ img{
 h1{padding-top: 2rem;
     font-size: 2rem;
     font-weight: 900;
-    color: var(--gray-);
+    color:#ee63ba;
     text-align: center;
+    margin-bottom: -1rem;
     
 }
 time{
@@ -80,7 +86,7 @@ margin-bottom: -4rem;
 }
 .postContent{text-align: justify;
     margin-top: 5rem;
-    
+    margin-bottom: -6rem;
    
     color: var(--gray-);
     font-size: 1.2rem;
@@ -114,15 +120,29 @@ margin-bottom: -4rem;
     }
 
 }
-.voltar{  background-image: linear-gradient(to right,#E3B198, #FBD7CE, #fff,); text-align: center; 
-    a{  padding-bottom: 5rem;
-        color: var(--gray-100);
-        display: inline-block;
-        margin: 0 auto;
-        transition: 1s;
-        
+.voltar{  width: 98.5vw;
+    background-color: #ee63ba;
+   border-radius: 4px;
+   margin-top: 4rem;
+   padding: 0.5rem;
+ box-sizing: border-box; 
+   
+   display: flex;
+   justify-content: flex-end;
+   
+   margin-bottom: 4rem;
+    a{  align-items: center;
+        background-color: #ee63ba;
+        color: white;
         text-align: center;
-
+        border: 0;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        display: flex;
+       cursor: pointer;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
 
     a:hover{
@@ -134,5 +154,13 @@ margin-bottom: -4rem;
 
 
 
-   
+@media (max-width: 950px) {
 
+
+.ebooks{  width: 290px;
+    height: 161px;
+    margin-top: 2.7rem;
+   
+  }
+}
+   
