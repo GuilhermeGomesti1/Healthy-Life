@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Catamaran:wght@300&family=DM+Serif+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:ital@1&display=swap");
 
-.containerPost { 
+.containerPost {
   margin: 0;
   background-color: white;
 }
@@ -16,7 +16,7 @@
   display: block;
   margin: 0 auto;
 }
-.posts { 
+.posts {
   max-width: 1600px;
   align-items: center;
   margin: 0 auto;
@@ -68,7 +68,8 @@
       align-items: center;
     }
 
-    p {margin-top: 1rem;
+    p {
+      margin-top: 1rem;
       font-weight: bolder;
       font-size: 0.8rem;
       line-height: 2.25rem;
@@ -89,8 +90,8 @@
     &:hover strong {
     }
   }
-  .posts:hover{
-    img:hover{
+  .posts:hover {
+    img:hover {
       transform: scale(1.02);
     }
   }
@@ -99,20 +100,21 @@
   cursor: progress;
 }
 
-.buttonNavigate { width: 98.5vw;
-   background-color: #ee63ba;
+.buttonNavigate {
+  width: 98.5vw;
+  background-color: #ee63ba;
   border-radius: 4px;
   margin-top: 4rem;
   padding: 0.5rem;
-box-sizing: border-box; 
-  
+  box-sizing: border-box;
+
   display: flex;
   justify-content: flex-end;
-  
-  margin-bottom: 4rem;
- 
 
-  button { align-items: center;
+  margin-bottom: 4rem;
+
+  button {
+    align-items: center;
     background-color: #ee63ba;
     color: white;
     text-align: center;
@@ -121,20 +123,18 @@ box-sizing: border-box;
     text-decoration: none;
     transition: background-color 0.3s;
     display: flex;
-    
-   cursor: pointer;
+
+    cursor: pointer;
     border-radius: 4px;
     box-sizing: border-box;
-   
-    svg {
-  
-    }
-    
-  }
-  
-  }.bvoltar { margin-right: 107rem;
-}
 
+    svg {
+    }
+  }
+}
+.bvoltar {
+  margin-right: 110rem;
+}
 
 @media (max-width: 950px) {
   .dicas {
@@ -171,7 +171,6 @@ box-sizing: border-box;
     p {
       color: red;
       font-size: 1rem;
-      
     }
   }
   .dicaserec {
@@ -181,6 +180,7 @@ box-sizing: border-box;
     align-items: center;
     justify-content: center;
   }
-  .bvoltar { margin-right: 21rem;
+  .bvoltar {
+    margin-right: 23.8rem;
   }
 }
