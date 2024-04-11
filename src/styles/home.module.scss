@@ -16,11 +16,15 @@
       margin-bottom: -1rem;
     }
   }
-  .area2{padding-top: 1rem;}
+  .area2 {
+    padding-top: 1rem;
+  }
+  .homegislene {
+    width: 100%;
+  }
 }
 
 .area1 {
-  
   padding-bottom: 2rem;
   background-color: #fbd7ce;
   width: 100%;
@@ -38,20 +42,17 @@
   }
 
   .containerHeader {
-    
     width: 100%;
     display: flex;
     align-items: center;
   }
 
   .ctaText {
-   
     width: 100%;
     text-align: justify;
     margin-left: 4rem;
 
     h1 {
-    
       font-size: 3rem;
       line-height: 4.5rem;
       font-weight: 900;
@@ -59,7 +60,6 @@
       color: var(--gray-);
     }
     h2 {
-     
       font-size: 2rem;
       line-height: 4.5rem;
       font-weight: 900;
@@ -67,7 +67,6 @@
       color: var(--gray-);
     }
     span {
-     
       font-size: 1.2rem;
       line-height: 2.25rem;
       color: var(--gray-);
@@ -104,9 +103,7 @@
       text-align: center;
       margin-top: 2rem;
     }
-   
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -181,7 +178,7 @@
   }
 }
 
-.area2 { 
+.area2 {
   background-color: var(--white-);
   img {
     border-radius: 50%;
@@ -218,16 +215,17 @@
   }
 }
 
-.area3 {  
+.area3 {
   width: 100%;
   img {
     padding-right: 4rem;
   }
 }
-.ebooks {  max-height: 750px;
+.ebooks {
+  max-height: 750px;
   background-color: #fbd7ce;
   width: 100%;
-  
+
   .titlebooks {
     //nome GIslene
     display: block;
@@ -237,7 +235,8 @@
   }
 }
 
-.area4 { margin-top: -6rem;
+.area4 {
+  margin-top: -6rem;
   background-color: var(--white-);
 }
 
@@ -349,8 +348,7 @@
     margin-top: 2rem;
     transition: 1s;
   }
-  button{
-  
+  button {
   }
   button:hover {
     background-color: rgb(250, 139, 209);
@@ -471,7 +469,7 @@
       }
     }
   }
-  .ebooks { 
+  .ebooks {
     padding: 0 2 rem;
 
     .ebookscontent {
@@ -512,13 +510,7 @@
 //janela muito pequena
 @media (max-width: 950px) {
   .container {
-  
     .divsobremimTitle {
-
-      
-
-
-     
       align-items: center;
       display: flex;
       width: 100%;
@@ -631,7 +623,8 @@
     }
 
     //botao 2 e img 2 tela pequena
-    .area2 { padding-top: 0;
+    .area2 {
+      padding-top: 0;
       button {
         width: 100%;
         display: flex;
@@ -645,8 +638,8 @@
     }
   }
 
-  .ebooks { 
-    .ebookscontent { 
+  .ebooks {
+    .ebookscontent {
       flex-direction: column;
       margin-bottom: -6rem;
 
@@ -671,26 +664,22 @@
 
       button {
         max-width: 90%;
-margin-bottom: 4rem;
+        margin-bottom: 4rem;
         justify-content: center;
         align-items: center;
-
-       
-        
       }
     }
   }
 
-  .area4 { margin-top: 14rem;
+  .area4 {
+    margin-top: 14rem;
     h2 {
       font-size: 2rem;
       text-align: center;
       margin: 0 auto;
     }
-    
 
     button {
-   
     }
   }
 }
